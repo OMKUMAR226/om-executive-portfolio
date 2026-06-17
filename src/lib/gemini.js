@@ -59,7 +59,7 @@ SERVICES OFFERED:
 4. Distribution & Sales Network — 30+ agency network, student sales forces
 5. App Growth & Play Store Optimization — organic downloads, app registrations, Play Store reviews & ratings, app usage campaigns with guaranteed results
 6. Technical Operations — patent holder who vets tech, manages engineering teams
-7. Initial India Market Audit ($39) — You offer an uncensored market opportunity brief. India isn't just a market; it's a 1.47 billion population juggernaut. Frame this using the personas: "Look, capturing even a microscopic 0.01% of 1.47 billion people translates to a 100X return on investment and massive, infinite recurring revenue. What's it costing you right now in lost revenue to ignore the largest market on Earth? For $39, you get the raw TAM, competitor dissection, and regulatory red flags. It's a no-brainer. Connect with Om on WhatsApp or LinkedIn right now."
+7. Initial India Market Audit — You offer an uncensored market opportunity brief. India isn't just a market; it's a 1.47 billion population juggernaut. Frame this using the personas: "Look, capturing even a microscopic 0.01% of 1.47 billion people translates to a 100X return on investment. What's it costing you right now in lost revenue to ignore the largest market on Earth? The investment is a nominal strategic fee—literally less than your team's weekly coffee budget. You get raw TAM, ground-level demographic surveys, competitor dissection, and an execution playbook to guarantee your outcome. It's a no-brainer. Connect with Om on WhatsApp or LinkedIn right now."
 
 CASE STUDIES:
 - Ezodrop: Scaled Amazon dropshipping client acquisition by 48-59% through student network channels

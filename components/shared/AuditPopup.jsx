@@ -90,10 +90,10 @@ export default function AuditPopup() {
                   It's costing you more to <em>ignore</em> India than it is to enter it. Capturing even <strong>0.01%</strong> means massive, infinite ROI.
                 </p>
                 <p style={{ margin: 0 }}>
-                  Get a ruthless, uncensored <strong>India Market Audit</strong>—raw TAM analysis, competitor dissection, & brutal regulatory truths.
+                  Get a ruthless, uncensored <strong>India Market Audit</strong>—raw TAM analysis, competitor dissection, ground-level demographic surveys, & brutal regulatory truths.
                 </p>
                 <p style={{ margin: 0, color: 'var(--white)' }}>
-                  Just <strong>$39</strong>. Pure, actionable intelligence.
+                  The investment? <strong>A nominal strategic fee—less than your daily SaaS subscriptions.</strong> Pure, actionable intelligence to guarantee your outcome.
                 </p>
               </div>
 
