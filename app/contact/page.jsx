@@ -188,7 +188,7 @@ export default function ContactPage() {
                       <option value="pilot">Pilot & Validate ($1,000 - $3,000 / mo)</option>
                       <option value="growth">Scaling & Growth ($3,000 - $7,000 / mo)</option>
                       <option value="aggressive">Aggressive Market Capture ($7,000 - $15,000+ / mo)</option>
-                      <option value="performance">Strategic Partner (Performance / Rev-Share)</option>
+                      <option value="performance">Strategic Partner (Base Retainer + Performance)</option>
                     </select>
                   </div>
 
