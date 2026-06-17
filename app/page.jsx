@@ -6,7 +6,6 @@ import StatsCounters from '@/components/home/StatsCounters';
 import CaseStudyPreviews from '@/components/home/CaseStudyPreviews';
 import WhoThisIsFor from '@/components/home/WhoThisIsFor';
 import FinalCTA from '@/components/home/FinalCTA';
-import AuditPopup from '@/components/shared/AuditPopup';
 
 export const metadata = {
   title: 'Om Kumar Garg — India Market Lead & Ecosystem Architect',
@@ -25,7 +24,6 @@ export default function HomePage() {
       <CaseStudyPreviews />
       <WhoThisIsFor />
       <FinalCTA />
-      <AuditPopup />
     </>
   );
 }

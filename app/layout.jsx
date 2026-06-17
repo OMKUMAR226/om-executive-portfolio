@@ -6,6 +6,7 @@ import ScrollProgress from '@/components/shared/ScrollProgress';
 import GradientMeshBg from '@/components/shared/GradientMeshBg';
 import ParticlesBackground from '@/components/shared/ParticlesBackground';
 import Chatbot from '@/components/chatbot/Chatbot';
+import AuditPopup from '@/components/shared/AuditPopup';
 
 export const metadata = {
   metadataBase: new URL('https://omkumargarg.vercel.app'),
@@ -65,8 +66,9 @@ export default function RootLayout({ children }) {
         </main>
         <Footer />
 
-        {/* Floating chatbot */}
+        {/* Floating elements */}
         <Chatbot />
+        <AuditPopup />
       </body>
     </html>
   );

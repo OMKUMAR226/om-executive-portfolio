@@ -27,16 +27,20 @@ export default function AuditPopup() {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    // Show popup after 4 seconds
+    // Show popup after 1.5 seconds
     const timer = setTimeout(() => {
-      const hasSeenPopup = sessionStorage.getItem('auditPopupSeen');
-      if (!hasSeenPopup) {
+      const isClosed = sessionStorage.getItem('auditPopupClosed');
+      if (!isClosed) {
         setIsOpen(true);
-        sessionStorage.setItem('auditPopupSeen', 'true');
       }
-    }, 4000);
+    }, 1500);
     return () => clearTimeout(timer);
   }, []);
+
+  const handleClose = () => {
+    sessionStorage.setItem('auditPopupClosed', 'true');
+    setIsOpen(false);
+  };
 
   return (
     <AnimatePresence>
@@ -74,7 +78,7 @@ export default function AuditPopup() {
                   FOUNDER'S OFFER
                 </div>
                 <button 
-                  onClick={() => setIsOpen(false)}
+                  onClick={handleClose}
                   style={{ background: 'none', border: 'none', color: 'var(--slate-400)', cursor: 'pointer', padding: '0px' }}
                 >
                   <X size={16} />
