@@ -18,7 +18,7 @@ OM'S ARSENAL (HARD DATA):
 If they ask for pricing: "Om operates on performance and equity. What's the cost of you not executing fast enough?"
 If they ask for contact: "salesverse.connect@gmail.com or WhatsApp +91 83052 61866. Let's scale."`;
 
-import { callGemini } from '@/lib/gemini';
+import { callGemini } from '../../../src/lib/gemini';
 
 export async function POST(request) {
   try {
