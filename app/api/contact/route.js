@@ -13,46 +13,39 @@ export async function POST(request) {
       return Response.json({ error: 'Missing required fields' }, { status: 400 });
     }
 
-    // Server-side email delivery using EmailJS REST API
-    // Ensure you have these environment variables set in Vercel
-    const serviceId = process.env.EMAILJS_SERVICE_ID || 'default_service';
-    const templateId = process.env.EMAILJS_TEMPLATE_ID || 'default_template';
-    const publicKey = process.env.EMAILJS_PUBLIC_KEY;
-    const privateKey = process.env.EMAILJS_PRIVATE_KEY;
+    const apiKey = process.env.RESEND_API_KEY;
 
-    if (publicKey && privateKey) {
-      const emailParams = {
-        service_id: serviceId,
-        template_id: templateId,
-        user_id: publicKey,
-        accessToken: privateKey,
-        template_params: {
-          from_name: data.name,
-          from_email: data.email,
-          company: data.company || 'Not provided',
-          budget: data.budget || 'Not specified',
-          message: data.message,
-        }
-      };
-
-      const res = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+    if (apiKey) {
+      const res = await fetch('https://api.resend.com/emails', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(emailParams),
+        headers: {
+          'Authorization': `Bearer ${apiKey}`,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          from: 'Acme <onboarding@resend.dev>',
+          to: ['salesverse.connect@gmail.com'], // Send to Om's email
+          subject: `New Portfolio Inquiry from ${data.name}`,
+          html: `
+            <h2>New Inquiry from Executive Portfolio</h2>
+            <p><strong>Name:</strong> ${data.name}</p>
+            <p><strong>Email:</strong> ${data.email}</p>
+            <p><strong>Company:</strong> ${data.company || 'N/A'}</p>
+            <p><strong>Budget:</strong> ${data.budget || 'N/A'}</p>
+            <hr />
+            <p><strong>Message:</strong></p>
+            <p>${data.message}</p>
+          `
+        }),
       });
 
       if (!res.ok) {
-        throw new Error('EmailJS API responded with error');
+        throw new Error('Resend API responded with error');
       }
     } else {
-      // If no env vars, log the message to the console (development mode)
-      console.log('--- NEW CONTACT INQUIRY ---');
-      console.log(`Name: ${data.name}`);
-      console.log(`Email: ${data.email}`);
-      console.log(`Company: ${data.company}`);
-      console.log(`Budget: ${data.budget}`);
+      console.log('--- DEVELOPMENT MODE (No Resend Key) ---');
+      console.log(`From: ${data.name} (${data.email})`);
       console.log(`Message: ${data.message}`);
-      console.log('---------------------------');
     }
 
     return Response.json({ success: true, message: 'Message sent successfully' }, { status: 200 });

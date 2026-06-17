@@ -18,48 +18,24 @@ OM'S ARSENAL (HARD DATA):
 If they ask for pricing: "Om operates on performance and equity. What's the cost of you not executing fast enough?"
 If they ask for contact: "salesverse.connect@gmail.com or WhatsApp +91 83052 61866. Let's scale."`;
 
+import { callGemini } from '@/lib/gemini';
+
 export async function POST(request) {
   try {
     const { userMessage, messages = [] } = await request.json();
 
-    // Default to 'qwen' since you mentioned you have Qwen installed. 
-    // You can also change this to 'llama3' or 'llama2' depending on what your local tag is named.
-    const model = process.env.OLLAMA_MODEL || 'qwen3:8b';
-    const ollamaUrl = process.env.OLLAMA_URL || 'http://localhost:11434/api/chat';
-
-    const formattedMessages = [
-      { role: 'system', content: SYSTEM_PROMPT },
-      ...messages.map((m) => ({ role: m.role, content: m.content })),
-      { role: 'user', content: userMessage },
-    ];
-
-    const res = await fetch(ollamaUrl, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        model: model,
-        messages: formattedMessages,
-        stream: false,
-      }),
-    });
-
-    if (!res.ok) {
-      const errText = await res.text();
-      console.error('Ollama API error:', errText);
-      return Response.json(
-        { error: `Ollama API error: ${errText}. Make sure Ollama is running and the model '${model}' is downloaded.` },
-        { status: res.status }
-      );
+    if (!userMessage) {
+      return Response.json({ error: 'Message is required' }, { status: 400 });
     }
 
-    const data = await res.json();
-    const response = data.message?.content || 'No response generated.';
+    // Call Gemini instead of local Ollama
+    const responseText = await callGemini(userMessage, messages);
 
-    return Response.json({ response });
+    return Response.json({ response: responseText });
   } catch (err) {
     console.error('Chat route error:', err);
     return Response.json(
-      { error: 'Could not connect to local Ollama server. Please ensure Ollama is running.' },
+      { error: err.message || 'Failed to generate AI response.' },
       { status: 500 }
     );
   }
