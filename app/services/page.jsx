@@ -1,4 +1,4 @@
-import { Globe, Network, Users, Code, FlaskConical, Building2, Megaphone } from 'lucide-react';
+import { Globe, Network, Users, Code, FlaskConical, Building2, Megaphone, Smartphone, Search } from 'lucide-react';
 import AnimatedHeading from '@/components/shared/AnimatedHeading';
 import GlassCard from '@/components/shared/GlassCard';
 import MoneyBadge from '@/components/shared/MoneyBadge';
@@ -34,7 +34,7 @@ const SERVICES = [
     title: 'Zero-Ad. Zero-Budget. Real Scale.',
     tag: 'ORGANIC GROWTH & COMMUNITY BUILDING',
     badge: { val: '₹0 AD SPEND → 6,000 MEMBERS', color: 'gold' },
-    body: 'I grew AIDN to 6,000+ members with pure content strategy and LinkedIn organic — no paid ads, ever. Same methodology applied to your India brand presence, community, developer ecosystem, or customer base.',
+    body: 'I grew AISF to 6,000+ members with pure content strategy and LinkedIn organic — no paid ads, ever. Same methodology applied to your India brand presence, community, developer ecosystem, or customer base.',
     result: 'Paid traffic rents attention. Community architecture owns it.',
   },
   {
@@ -66,6 +66,24 @@ const SERVICES = [
     tag: 'CONTENT, DISTRIBUTION & ACTIVATION',
     body: 'LinkedIn content strategy, campus activations, product distribution through college networks, WhatsApp-first campaigns, UGC generation, and influencer coordination across tier-1 and tier-2 Indian cities.',
     result: 'Real Indian audience growth — not vanity metrics.',
+  },
+  {
+    icon: Smartphone,
+    title: 'App Growth & Play Store Optimization.',
+    tag: 'APP ACQUISITION & RETENTION',
+    badge: { val: 'GUARANTEED RESULTS', color: 'gold' },
+    body: 'Increasing organic app downloads, app registrations, Play Store reviews and ratings, and app usage with guaranteed results. We drive real user acquisition through community networks rather than fake clicks.',
+    who: 'App founders looking for high-quality Indian user acquisition.',
+    result: 'From downloads to active, engaged users.',
+  },
+  {
+    icon: Search,
+    title: 'Free Uncensored India Market Audit.',
+    tag: 'MARKET OPPORTUNITY BRIEF',
+    badge: { val: '1.47 BILLION MARKET', color: 'sky' },
+    body: 'A free audit for any company considering India. I provide an uncensored market opportunity brief with TAM analysis. India has 1.47 billion people. Capturing even 0.01% means steady recurring income.',
+    who: 'Companies exploring the Indian market with zero risk.',
+    result: 'Clarity on whether India is right for your product.',
   },
 ];
 

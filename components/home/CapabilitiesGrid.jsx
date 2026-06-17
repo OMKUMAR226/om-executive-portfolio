@@ -24,7 +24,7 @@ const CAPABILITIES = [
   {
     icon: '📈',
     title: 'Organic Growth — ₹0 Ad Spend',
-    body: 'I grew AIDN to 6,000+ members with zero paid advertising. Same methodology — LinkedIn content engine, community architecture, organic distribution — applied to your India audience from Day 1.',
+    body: 'I grew AISF to 6,000+ members with zero paid advertising. Same methodology — LinkedIn content engine, community architecture, organic distribution — applied to your India audience from Day 1.',
     badge: { val: '₹0 AD SPEND → 6,000 MEMBERS', color: 'gold' },
     sub: 'Zero budget. Real scale. Proven methodology.',
   },
@@ -46,6 +46,13 @@ const CAPABILITIES = [
     body: 'Pre-vetted engineering students from India\'s top institutions — available for beta testing, product feedback, app downloads, testimonials, and campus activation. Pipeline ready on Day 1.',
     badge: { val: '6,000+ USERS', color: 'sky' },
     sub: 'Real users. Real feedback. Before you launch.',
+  },
+  {
+    icon: '📱',
+    title: 'App Growth & Optimization',
+    body: 'Increasing organic app downloads, app registrations, Play Store reviews/comments, and app usage with guaranteed results. Driving real user acquisition through community networks.',
+    badge: { val: 'GUARANTEED RESULTS', color: 'gold' },
+    sub: 'From downloads to active users.',
   },
 ];
 

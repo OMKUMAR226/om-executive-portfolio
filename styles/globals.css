@@ -13,42 +13,46 @@
   --navy-700: #0E1A33;
   --navy-600: #15264A;
 
-  /* Brand Colors - Saffron & Green accents for Proud Indian identity */
-  --sky: #38BDF8;
-  --sky-light: #7DD3FC;
-  --sky-dim: rgba(56, 189, 248, 0.12);
-  --gold: #FF9933; /* Indian Saffron */
-  --gold-light: #FFB366;
-  --gold-dim: rgba(255, 153, 51, 0.10);
-  --emerald: #138808; /* Indian Green */
-  --red-pain: #F87171;
+  /* Primary Accent — Warm Muted Gold (single premium accent) */
+  --gold: #D4A853;
+  --gold-light: #E0BF7A;
+  --gold-dim: rgba(212, 168, 83, 0.10);
+
+  /* Secondary — Muted silver-blue (text & subtle borders only) */
+  --sky: #8B9DB7;
+  --sky-light: #A8B8CC;
+  --sky-dim: rgba(139, 157, 183, 0.10);
+
+  /* Status only — never for badges */
+  --emerald: #6B8A6E;
+  --red-pain: #C07070;
 
   /* Text */
-  --white: #FFFFFF;
-  --slate-200: #E2E8F0;
-  --slate-300: #CBD5E1;
-  --slate-400: #94A3B8;
+  --white: #F0EDE8;
+  --slate-200: #D5D0C8;
+  --slate-300: #B8B2A8;
+  --slate-400: #8A8478;
 
-  /* Glows */
-  --glow-sky: 0 0 40px rgba(56, 189, 248, 0.30);
-  --glow-gold: 0 0 40px rgba(245, 200, 66, 0.35);
-  --glow-gold-intense: 0 0 60px rgba(245, 200, 66, 0.5), 0 0 120px rgba(245, 200, 66, 0.2);
-  --glow-emerald: 0 0 30px rgba(16, 185, 129, 0.3);
-  --glow-red: 0 0 30px rgba(248, 113, 113, 0.3);
+  /* Glows — all gold family */
+  --glow-sky: 0 0 30px rgba(212, 168, 83, 0.15);
+  --glow-gold: 0 0 30px rgba(212, 168, 83, 0.20);
+  --glow-gold-intense: 0 0 40px rgba(212, 168, 83, 0.30), 0 0 80px rgba(212, 168, 83, 0.10);
+  --glow-emerald: 0 0 20px rgba(107, 138, 110, 0.15);
+  --glow-red: 0 0 20px rgba(192, 112, 112, 0.15);
 
   /* Glassmorphism */
-  --glass-bg: rgba(13, 23, 40, 0.75);
-  --glass-border: 1px solid rgba(56, 189, 248, 0.12);
+  --glass-bg: rgba(10, 18, 32, 0.80);
+  --glass-border: 1px solid rgba(212, 168, 83, 0.10);
   --glass-blur: blur(20px);
 
-  /* Gradients */
+  /* Gradients — gold-only */
   --gradient-hero: linear-gradient(135deg, #02040A 0%, #050A14 50%, #091122 100%);
-  --gradient-gold-sky: linear-gradient(135deg, #FF9933, #38BDF8);
+  --gradient-gold-sky: linear-gradient(135deg, #D4A853, #E0BF7A);
   --gradient-card: linear-gradient(135deg, rgba(9, 17, 34, 0.85), rgba(14, 26, 51, 0.70));
-  --gradient-btn: linear-gradient(135deg, #FF9933, #38BDF8);
+  --gradient-btn: linear-gradient(135deg, #D4A853, #E0BF7A);
 
   /* Noise */
-  --noise-opacity: 0.025;
+  --noise-opacity: 0.015;
 
   /* Transitions */
   --transition: cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
@@ -163,19 +167,19 @@ p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: rgba(245, 200, 66, 0.07);
-  border: 1px solid rgba(245, 200, 66, 0.25);
+  background: rgba(212, 168, 83, 0.06);
+  border: 1px solid rgba(212, 168, 83, 0.20);
   border-radius: 10px;
   font-family: 'JetBrains Mono', monospace;
   font-weight: 700;
   color: var(--gold);
-  text-shadow: 0 0 20px rgba(245, 200, 66, 0.5), 0 0 40px rgba(245, 200, 66, 0.2);
-  box-shadow: 0 0 20px rgba(245, 200, 66, 0.08), inset 0 1px 0 rgba(245, 200, 66, 0.1);
+  text-shadow: 0 0 15px rgba(212, 168, 83, 0.3);
+  box-shadow: 0 0 12px rgba(212, 168, 83, 0.05), inset 0 1px 0 rgba(212, 168, 83, 0.08);
   transition: all 0.3s ease;
 }
 
 .money-badge:hover {
-  box-shadow: 0 0 30px rgba(245, 200, 66, 0.2), inset 0 1px 0 rgba(245, 200, 66, 0.15);
+  box-shadow: 0 0 20px rgba(212, 168, 83, 0.12), inset 0 1px 0 rgba(212, 168, 83, 0.1);
   transform: translateY(-1px);
 }
 
@@ -201,20 +205,29 @@ p {
   border-radius: 14px;
 }
 
+/* All badge colors now map to the same gold family */
 .money-badge-sky {
-  background: rgba(56, 189, 248, 0.07);
-  border-color: rgba(56, 189, 248, 0.25);
-  color: var(--sky);
-  text-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
-  box-shadow: 0 0 20px rgba(56, 189, 248, 0.08), inset 0 1px 0 rgba(56, 189, 248, 0.1);
+  background: rgba(212, 168, 83, 0.04);
+  border-color: rgba(212, 168, 83, 0.15);
+  color: var(--gold-light);
+  text-shadow: 0 0 15px rgba(212, 168, 83, 0.25);
+  box-shadow: 0 0 12px rgba(212, 168, 83, 0.04), inset 0 1px 0 rgba(212, 168, 83, 0.06);
 }
 
 .money-badge-red {
-  background: rgba(248, 113, 113, 0.07);
-  border-color: rgba(248, 113, 113, 0.25);
+  background: rgba(192, 112, 112, 0.06);
+  border-color: rgba(192, 112, 112, 0.20);
   color: var(--red-pain);
-  text-shadow: 0 0 20px rgba(248, 113, 113, 0.5);
-  box-shadow: 0 0 20px rgba(248, 113, 113, 0.08), inset 0 1px 0 rgba(248, 113, 113, 0.1);
+  text-shadow: 0 0 15px rgba(192, 112, 112, 0.3);
+  box-shadow: 0 0 12px rgba(192, 112, 112, 0.05), inset 0 1px 0 rgba(192, 112, 112, 0.06);
+}
+
+.money-badge-emerald {
+  background: rgba(212, 168, 83, 0.04);
+  border-color: rgba(212, 168, 83, 0.15);
+  color: var(--gold);
+  text-shadow: 0 0 15px rgba(212, 168, 83, 0.25);
+  box-shadow: 0 0 12px rgba(212, 168, 83, 0.04), inset 0 1px 0 rgba(212, 168, 83, 0.06);
 }
 
 /* ============================================================
@@ -226,29 +239,29 @@ p {
   backdrop-filter: var(--glass-blur);
   -webkit-backdrop-filter: var(--glass-blur);
   border-radius: 20px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(56, 189, 248, 0.08);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(212, 168, 83, 0.04);
   transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   transform-style: preserve-3d;
   will-change: transform;
 }
 
 .glass-card:hover {
-  border-color: rgba(56, 189, 248, 0.35);
-  box-shadow: var(--glow-sky), 0 8px 32px rgba(0, 0, 0, 0.5);
-  transform: translateY(-5px);
+  border-color: rgba(212, 168, 83, 0.25);
+  box-shadow: var(--glow-gold), 0 8px 32px rgba(0, 0, 0, 0.5);
+  transform: translateY(-3px);
 }
 
 .glass-card-gold {
-  border-color: rgba(245, 200, 66, 0.2);
+  border-color: rgba(212, 168, 83, 0.15);
 }
 
 .glass-card-gold:hover {
-  border-color: rgba(245, 200, 66, 0.45);
+  border-color: rgba(212, 168, 83, 0.30);
   box-shadow: var(--glow-gold), 0 8px 32px rgba(0, 0, 0, 0.5);
 }
 
 .glass-card-red {
-  border-color: rgba(248, 113, 113, 0.2);
+  border-color: rgba(192, 112, 112, 0.15);
   border-left: 3px solid var(--red-pain);
 }
 
@@ -275,7 +288,7 @@ p {
   justify-content: center;
   gap: 8px;
   background: var(--gradient-btn);
-  color: #000000;
+  color: #0A0E18;
   font-weight: 700;
   font-family: 'Space Grotesk', sans-serif;
   font-size: 15px;
@@ -283,7 +296,7 @@ p {
   border-radius: 10px;
   border: none;
   cursor: pointer;
-  box-shadow: 0 0 25px rgba(56, 189, 248, 0.45);
+  box-shadow: 0 0 20px rgba(212, 168, 83, 0.25);
   transition: all 0.25s ease;
   text-decoration: none;
   letter-spacing: 0.01em;
@@ -302,7 +315,7 @@ p {
 }
 
 .btn-primary:hover {
-  box-shadow: 0 0 45px rgba(56, 189, 248, 0.65);
+  box-shadow: 0 0 35px rgba(212, 168, 83, 0.40);
   transform: scale(1.02);
 }
 
@@ -316,13 +329,13 @@ p {
   justify-content: center;
   gap: 8px;
   background: transparent;
-  color: var(--sky);
+  color: var(--gold);
   font-weight: 700;
   font-family: 'Space Grotesk', sans-serif;
   font-size: 15px;
   padding: 13px 34px;
   border-radius: 10px;
-  border: 1.5px solid var(--sky);
+  border: 1.5px solid rgba(212, 168, 83, 0.4);
   cursor: pointer;
   transition: all 0.25s ease;
   text-decoration: none;
@@ -331,8 +344,8 @@ p {
 }
 
 .btn-outline:hover {
-  background: rgba(56, 189, 248, 0.08);
-  box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+  background: rgba(212, 168, 83, 0.06);
+  box-shadow: 0 0 15px rgba(212, 168, 83, 0.15);
 }
 
 /* ============================================================
@@ -350,26 +363,26 @@ p {
 }
 
 .pill-sky {
-  background: rgba(56, 189, 248, 0.1);
-  border: 1px solid rgba(56, 189, 248, 0.3);
-  color: var(--sky);
+  background: rgba(212, 168, 83, 0.06);
+  border: 1px solid rgba(212, 168, 83, 0.20);
+  color: var(--gold-light);
 }
 
 .pill-gold {
-  background: rgba(245, 200, 66, 0.1);
-  border: 1px solid rgba(245, 200, 66, 0.3);
+  background: rgba(212, 168, 83, 0.08);
+  border: 1px solid rgba(212, 168, 83, 0.25);
   color: var(--gold);
 }
 
 .pill-emerald {
-  background: rgba(16, 185, 129, 0.1);
-  border: 1px solid rgba(16, 185, 129, 0.3);
+  background: rgba(107, 138, 110, 0.08);
+  border: 1px solid rgba(107, 138, 110, 0.25);
   color: var(--emerald);
 }
 
 .pill-red {
-  background: rgba(248, 113, 113, 0.1);
-  border: 1px solid rgba(248, 113, 113, 0.3);
+  background: rgba(192, 112, 112, 0.08);
+  border: 1px solid rgba(192, 112, 112, 0.25);
   color: var(--red-pain);
 }
 
@@ -384,7 +397,7 @@ p {
 }
 
 .text-sky {
-  color: var(--sky);
+  color: var(--gold-light);
 }
 
 .text-gold {
@@ -414,12 +427,12 @@ p {
   padding: 2px;
   background: conic-gradient(
     from var(--border-angle),
-    var(--sky) 0deg,
-    var(--gold) 120deg,
-    #7c3aed 240deg,
-    var(--sky) 360deg
+    rgba(212, 168, 83, 0.6) 0deg,
+    rgba(212, 168, 83, 0.2) 120deg,
+    rgba(212, 168, 83, 0.4) 240deg,
+    rgba(212, 168, 83, 0.6) 360deg
   );
-  animation: rotateBorder 6s linear infinite;
+  animation: rotateBorder 8s linear infinite;
 }
 
 @keyframes rotateBorder {
@@ -537,9 +550,9 @@ p {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  border: 1px solid rgba(56, 189, 248, 0.3);
-  background: rgba(56, 189, 248, 0.06);
-  color: var(--sky);
+  border: 1px solid rgba(212, 168, 83, 0.25);
+  background: rgba(212, 168, 83, 0.05);
+  color: var(--gold-light);
   padding: 7px 16px;
   border-radius: 9999px;
   font-family: 'JetBrains Mono', monospace;
@@ -645,10 +658,10 @@ select.form-input option {
   top: 0;
   left: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--sky), var(--gold));
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
   z-index: 1000;
   transform-origin: left;
-  box-shadow: 0 0 10px rgba(56, 189, 248, 0.6);
+  box-shadow: 0 0 10px rgba(212, 168, 83, 0.4);
   transition: width 0.05s linear;
 }
 
@@ -659,13 +672,13 @@ select.form-input option {
   position: fixed;
   width: 8px;
   height: 8px;
-  background: var(--sky);
+  background: var(--gold);
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
   transform: translate(-50%, -50%);
   transition: width 0.2s ease, height 0.2s ease, background 0.2s ease, opacity 0.2s ease;
-  box-shadow: 0 0 10px rgba(56, 189, 248, 0.8);
+  box-shadow: 0 0 10px rgba(212, 168, 83, 0.6);
   will-change: transform;
 }
 
@@ -673,7 +686,7 @@ select.form-input option {
   position: fixed;
   width: 36px;
   height: 36px;
-  border: 1.5px solid rgba(56, 189, 248, 0.5);
+  border: 1.5px solid rgba(212, 168, 83, 0.4);
   border-radius: 50%;
   pointer-events: none;
   z-index: 9998;
@@ -809,13 +822,13 @@ body.cursor-card .cursor-ring {
 }
 
 .section-dot.active {
-  background: var(--sky);
-  box-shadow: var(--glow-sky);
+  background: var(--gold);
+  box-shadow: var(--glow-gold);
   transform: scale(1.4);
 }
 
 .section-dot:hover {
-  background: var(--sky);
+  background: var(--gold);
   transform: scale(1.2);
 }
 
@@ -857,7 +870,7 @@ body.cursor-card .cursor-ring {
 
 .timeline-line {
   width: 2px;
-  background: linear-gradient(to bottom, var(--sky), var(--gold));
+  background: linear-gradient(to bottom, var(--gold), rgba(212, 168, 83, 0.3));
   flex-shrink: 0;
   min-height: 60px;
 }
@@ -866,8 +879,8 @@ body.cursor-card .cursor-ring {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: var(--sky);
-  box-shadow: 0 0 12px rgba(56, 189, 248, 0.6);
+  background: var(--gold);
+  box-shadow: 0 0 12px rgba(212, 168, 83, 0.4);
   flex-shrink: 0;
   margin-top: 4px;
   border: 2px solid var(--navy-800);

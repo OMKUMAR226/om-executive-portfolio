@@ -3,7 +3,7 @@ import MoneyBadge from '@/components/shared/MoneyBadge';
 import AnimatedHeading from '@/components/shared/AnimatedHeading';
 
 export const metadata = {
-  title: 'AIDN Tech Community Case Study | 6,000+ Members, ₹0 Ad Spend',
+  title: 'AISF Pune & AIDN Case Study | 6,000+ Members, Non-Profit Community',
 };
 
 export default function AIDNPage() {
@@ -12,17 +12,17 @@ export default function AIDNPage() {
       {/* Sticky Metrics Bar */}
       <div className="sticky-metrics-bar">
         <MoneyBadge value="6,000+ MEMBERS" size="sm" color="gold" />
-        <MoneyBadge value="$8,100+ (₹6.7L+)" size="sm" color="sky" />
-        <MoneyBadge value="$7,200+ REVENUE" size="sm" color="gold" />
-        <MoneyBadge value="30–40% SURPLUS" size="sm" color="sky" />
-        <MoneyBadge value="₹0 AD SPEND" size="sm" color="sky" />
+        <MoneyBadge value="4 HACKATHONS" size="sm" color="gold" />
+        <MoneyBadge value="NON-PROFIT" size="sm" color="gold" />
+        <MoneyBadge value="30–40% SURPLUS" size="sm" color="gold" />
+        <MoneyBadge value="₹0 AD SPEND" size="sm" color="gold" />
       </div>
 
       <section style={{ paddingTop: '100px', paddingBottom: '60px', paddingLeft: '32px', paddingRight: '32px' }}>
         <div className="container" style={{ maxWidth: '840px', margin: '0 auto' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px', flexWrap: 'wrap' }}>
             <span className="pill pill-sky">Community Architecture</span>
-            <span className="pill pill-gold">Organic Growth</span>
+            <span className="pill pill-gold">Non-Profit</span>
             <span className="pill pill-emerald" style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
               <div style={{ width: '6px', height: '6px', borderRadius: '50%', background: 'var(--emerald)' }} />
               Ongoing
@@ -33,17 +33,35 @@ export default function AIDNPage() {
             From Zero to 6,000 Members — Building India&apos;s Largest AI Student Ecosystem on ₹0 Ad Budget
           </AnimatedHeading>
           
-          <div style={{ fontFamily: "'JetBrains Mono', monospace", color: 'var(--slate-400)', fontSize: '14px', marginBottom: '40px' }}>
-            <span style={{ color: 'var(--white)' }}>Organization:</span> AIDN Tech Community — VIT Pune <br/>
+          <div style={{ fontFamily: "'JetBrains Mono', monospace", color: 'var(--slate-400)', fontSize: '14px', marginBottom: '24px' }}>
+            <span style={{ color: 'var(--white)' }}>Organization:</span> AISF (Artificial Intelligence Student Forum) — VIT Pune <br/>
+            <span style={{ color: 'var(--white)' }}>Non-Profit Arm:</span> AIDN Pune (AI Developer Network) <br/>
             <span style={{ color: 'var(--white)' }}>Role:</span> Founder & Ecosystem Architect
+          </div>
+
+          {/* Social Links */}
+          <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', marginBottom: '40px' }}>
+            <a href="https://www.linkedin.com/company/artificial-intelligence-student-forum-aisf/" target="_blank" rel="noopener noreferrer" className="pill pill-gold" style={{ textDecoration: 'none', cursor: 'pointer' }}>LinkedIn — AISF</a>
+            <a href="https://www.linkedin.com/company/aidn-pune/posts/" target="_blank" rel="noopener noreferrer" className="pill pill-gold" style={{ textDecoration: 'none', cursor: 'pointer' }}>LinkedIn — AIDN Pune</a>
+            <a href="https://www.instagram.com/csai_aisf/" target="_blank" rel="noopener noreferrer" className="pill pill-sky" style={{ textDecoration: 'none', cursor: 'pointer' }}>@csai_aisf</a>
+            <a href="https://www.instagram.com/aisfcore/" target="_blank" rel="noopener noreferrer" className="pill pill-sky" style={{ textDecoration: 'none', cursor: 'pointer' }}>@aisfcore</a>
+            <a href="https://www.instagram.com/aidn_pune/" target="_blank" rel="noopener noreferrer" className="pill pill-sky" style={{ textDecoration: 'none', cursor: 'pointer' }}>@aidn_pune</a>
+          </div>
+
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '24px', marginBottom: '40px' }}>
+            <GlassCard style={{ padding: '24px', borderLeft: '3px solid var(--gold)' }}>
+              <p style={{ fontSize: '14px', lineHeight: 1.75, color: 'var(--slate-300)', margin: 0 }}>
+                <strong style={{ color: 'var(--white)' }}>AISF</strong> (Artificial Intelligence Student Forum) is VIT Pune's AI-focused student organization. It continues to operate as an active student body. <strong style={{ color: 'var(--white)' }}>AIDN Pune</strong> (AI Developer Network) is the non-profit community arm launched in June 2026, expanding from campus to city-wide scope using AISF's infrastructure, team, and assets. Both exist and operate simultaneously. All events and operations are company-sponsored — no membership fees, no ad spend.
+              </p>
+            </GlassCard>
           </div>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '24px', marginBottom: '60px' }}>
             <p style={{ fontSize: '18px', lineHeight: 1.75, color: 'var(--slate-300)', margin: 0 }}>
-              Building a community is easy. Keeping it active and profitable is extremely difficult. Most organizations attempt to solve this by throwing ad spend at the problem, resulting in inflated vanity metrics and low-quality engagement.
+              Building a community is easy. Keeping it active and self-sustaining is extremely difficult. Most organizations attempt to solve this by throwing ad spend at the problem, resulting in inflated vanity metrics and low-quality engagement.
             </p>
             <p style={{ fontSize: '18px', lineHeight: 1.75, color: 'var(--slate-300)', margin: 0 }}>
-              I founded AIDN with a different philosophy: organic value architecture. By identifying the core needs of AI engineering students in India (hackathons, direct industry access, and technical upskilling), we built an engine that grew from 0 to 6,000+ active members purely through organic distribution and high-value event execution.
+              I founded AISF with a different philosophy: organic value architecture. By identifying the core needs of AI engineering students in India (hackathons, direct industry access, and technical upskilling), we built an engine that grew from 0 to 6,000+ active members purely through organic distribution and high-value event execution — all supported by company sponsorships, never by paid advertising.
             </p>
           </div>
 
@@ -111,7 +129,7 @@ export default function AIDNPage() {
                   </div>
                   <div style={{ paddingBottom: '32px', paddingTop: '2px' }}>
                     <div style={{ fontSize: '13px', color: 'var(--sky)', fontFamily: "'JetBrains Mono', monospace", marginBottom: '8px' }}>JAN 2025</div>
-                    <h3 style={{ fontSize: '18px', color: 'var(--white)', marginBottom: '8px', margin: 0 }}>AIDN Founded</h3>
+                    <h3 style={{ fontSize: '18px', color: 'var(--white)', marginBottom: '8px', margin: 0 }}>AISF Founded</h3>
                     <p style={{ fontSize: '14px', color: 'var(--slate-400)', margin: 0 }}>Zero members, zero budget, zero ad spend.</p>
                   </div>
                 </div>

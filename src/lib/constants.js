@@ -99,9 +99,9 @@ export const CASE_STUDY_PREVIEWS = [
   },
   {
     id: 'aidn',
-    title: 'AIDN Community — Zero to 6,000+',
-    tags: ['Community Building', 'Operations'],
-    result: '₹6L+ Revenue Generated',
+    title: 'AISF Pune — Zero to 6,000+',
+    tags: ['Community Building', 'Non-Profit'],
+    result: '6,000+ Members, Company-Sponsored',
     href: '/case-studies#aidn',
   },
 ];
@@ -152,8 +152,24 @@ export const SERVICES = [
     title: 'Ecosystem & Community Building',
     headline: 'Build the Audience Before You Need It',
     description:
-      'I built AIDN from zero to 6,000+ active members with no paid advertising. The same organic community-building framework applies to your product, brand, or service. Beta testers, early adopters, power users, and advocates — I create them organically.',
+      'I built AISF from zero to 6,000+ active members with no paid advertising. The same organic community-building framework applies to your product, brand, or service. Beta testers, early adopters, power users, and advocates — I create them organically.',
     deliverables: ['Community Architecture', 'Zero-Ad Growth', 'Beta Testing Pipeline', 'Organic Advocacy'],
+  },
+  {
+    id: 'app-growth',
+    icon: '📱',
+    title: 'App Growth & Optimization',
+    headline: 'Real Users. Real Retention.',
+    description: 'Increasing organic app downloads, app registrations, Play Store reviews and ratings, and app usage with guaranteed results. Driving real user acquisition through community networks.',
+    deliverables: ['Organic Downloads', 'Registration Drives', 'Store Optimization', 'Usage Campaigns'],
+  },
+  {
+    id: 'free-audit',
+    icon: '🔍',
+    title: 'Free India Market Audit',
+    headline: 'Uncensored Market Opportunity Brief',
+    description: 'A free audit for any company considering India. I provide an uncensored market opportunity brief with TAM analysis. India has 1.47 billion people. Capturing even 0.01% means steady recurring income.',
+    deliverables: ['TAM Analysis', 'Competitor Landscape', 'Regulatory Overview', 'GTM Strategy'],
   },
   {
     id: 'tech-ops',

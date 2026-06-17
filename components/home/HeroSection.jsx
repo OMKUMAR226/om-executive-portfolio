@@ -122,7 +122,7 @@ export default function HeroSection() {
                 <span style={{ display: 'block', color: 'var(--red-pain)', fontWeight: 800, fontSize: 'clamp(44px, 6vw, 82px)' }}>Burn 6–12 Months</span>
                 <span style={{ display: 'block', color: 'var(--white)' }}>Figuring Out Execution.</span>
                 <span style={{ display: 'block', color: 'var(--white)' }}>I Provide The Ultimate</span>
-                <span style={{ display: 'block', color: 'var(--sky)' }}>End-to-End Ecosystem.</span>
+                <span style={{ display: 'block', color: 'var(--gold)' }}>End-to-End Ecosystem.</span>
               </h1>
             </div>
 
@@ -145,7 +145,7 @@ export default function HeroSection() {
             {/* Massive Data Grid (Replacing the paragraph) */}
             <div className="hero-reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px', marginTop: '8px', marginBottom: '16px' }}>
               <div style={{ display: 'flex', flexDirection: 'column' }}>
-                <span style={{ fontSize: 'clamp(48px, 6vw, 64px)', fontWeight: 800, color: 'var(--sky)', lineHeight: 1, letterSpacing: '-0.03em' }}>30+</span>
+                <span style={{ fontSize: 'clamp(48px, 6vw, 64px)', fontWeight: 800, color: 'var(--gold)', lineHeight: 1, letterSpacing: '-0.03em' }}>30+</span>
                 <span style={{ color: 'var(--slate-400)', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '2px', marginTop: '4px' }}>Vetted Indian Agencies</span>
               </div>
               <div style={{ display: 'flex', flexDirection: 'column' }}>
@@ -153,11 +153,11 @@ export default function HeroSection() {
                 <span style={{ color: 'var(--slate-400)', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '2px', marginTop: '4px' }}>Capital Managed</span>
               </div>
               <div style={{ display: 'flex', flexDirection: 'column' }}>
-                <span style={{ fontSize: 'clamp(48px, 6vw, 64px)', fontWeight: 800, color: 'var(--emerald)', lineHeight: 1, letterSpacing: '-0.03em' }}>40%</span>
+                <span style={{ fontSize: 'clamp(48px, 6vw, 64px)', fontWeight: 800, color: 'var(--gold-light)', lineHeight: 1, letterSpacing: '-0.03em' }}>40%</span>
                 <span style={{ color: 'var(--slate-400)', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '2px', marginTop: '4px' }}>Operational Surplus</span>
               </div>
               <div style={{ display: 'flex', flexDirection: 'column' }}>
-                <span style={{ fontSize: 'clamp(48px, 6vw, 64px)', fontWeight: 800, color: 'var(--sky)', lineHeight: 1, letterSpacing: '-0.03em' }}>6k+</span>
+                <span style={{ fontSize: 'clamp(48px, 6vw, 64px)', fontWeight: 800, color: 'var(--gold-light)', lineHeight: 1, letterSpacing: '-0.03em' }}>6k+</span>
                 <span style={{ color: 'var(--slate-400)', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '2px', marginTop: '4px' }}>AI Devs in Network</span>
               </div>
             </div>

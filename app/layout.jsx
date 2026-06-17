@@ -18,7 +18,7 @@ export const metadata = {
   keywords: [
     'India market entry', 'India operations lead', 'ecosystem architect',
     'co-founder India', 'VIT Pune', 'remote India partner', 'full stack developer India',
-    'Om Kumar Garg', 'AIDN community', 'SalesVerse',
+    'Om Kumar Garg', 'AISF community', 'AIDN Pune', 'SalesVerse',
   ],
   openGraph: {
     title: "Om Kumar Garg — India's Embedded Operations Partner",
