@@ -48,6 +48,28 @@ export async function POST(request) {
       console.log(`Message: ${data.message}`);
     }
 
+    // --- GOOGLE SHEETS INTEGRATION ---
+    const googleScriptUrl = process.env.GOOGLE_SCRIPT_URL;
+    if (googleScriptUrl) {
+      try {
+        await fetch(googleScriptUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            Timestamp: new Date().toISOString(),
+            Name: data.name,
+            Email: data.email,
+            Company: data.company || 'Not provided',
+            Country: 'Website (Vercel)',
+            Message: data.message,
+            Source: 'Executive Portfolio'
+          }),
+        });
+      } catch (e) {
+        console.error('Failed to sync to Google Sheets:', e);
+      }
+    }
+
     return Response.json({ success: true, message: 'Message sent successfully' }, { status: 200 });
 
   } catch (error) {
