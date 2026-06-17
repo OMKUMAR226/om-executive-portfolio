@@ -4,7 +4,7 @@ import MarqueeTicker from '@/components/home/MarqueeTicker';
 import CapabilitiesGrid from '@/components/home/CapabilitiesGrid';
 import DisruptiveAdvantage from '@/components/home/DisruptiveAdvantage';
 import StatsCounters from '@/components/home/StatsCounters';
-import EcosystemGraph from '@/components/home/EcosystemGraph';
+
 import CaseStudyPreviews from '@/components/home/CaseStudyPreviews';
 import WhoThisIsFor from '@/components/home/WhoThisIsFor';
 import FinalCTA from '@/components/home/FinalCTA';
@@ -24,7 +24,7 @@ export default function HomePage() {
       <CapabilitiesGrid />
       <DisruptiveAdvantage />
       <StatsCounters />
-      <EcosystemGraph />
+
       <CaseStudyPreviews />
       <WhoThisIsFor />
       <FinalCTA />
