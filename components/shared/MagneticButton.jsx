@@ -61,11 +61,11 @@ export default function MagneticButton({
       onMouseLeave={handleMouseLeave}
     >
       {href ? (
-        external ? (
+        (external || href.startsWith('mailto:') || href.startsWith('tel:')) ? (
           <a
             ref={btnRef}
             href={href}
-            target={href.startsWith('mailto:') || href.startsWith('tel:') ? undefined : "_blank"}
+            target={href.startsWith('mailto:') || href.startsWith('tel:') ? "_self" : "_blank"}
             rel={href.startsWith('mailto:') || href.startsWith('tel:') ? undefined : "noopener noreferrer"}
             className={`${variantClass} ${className}`}
             style={{ display: 'inline-flex', ...style }}

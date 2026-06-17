@@ -99,7 +99,6 @@ export default function FinalCTA() {
               <MagneticButton
                 href="mailto:salesverse.connect@gmail.com"
                 variant="outline"
-                external
                 id="final-email"
               >
                 salesverse.connect@gmail.com

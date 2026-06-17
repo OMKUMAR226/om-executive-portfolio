@@ -220,7 +220,7 @@ export default function ServicesPage() {
             <p style={{ fontSize: '20px', color: 'var(--white)', fontWeight: 500, marginBottom: '24px' }}>
               Don&apos;t see exactly what you need? If it involves India, I&apos;ve either done it or know exactly who can.
             </p>
-            <MagneticButton href="mailto:salesverse.connect@gmail.com" variant="primary" external>
+            <MagneticButton href="mailto:salesverse.connect@gmail.com" variant="primary">
               salesverse.connect@gmail.com
             </MagneticButton>
           </GlassCard>
