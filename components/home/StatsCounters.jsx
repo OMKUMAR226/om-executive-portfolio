@@ -13,10 +13,10 @@ const PRIMARY_STATS = [
 ];
 
 const SECONDARY_STATS = [
-  { prefix: '', value: 30, suffix: '+', label: 'Vetted Agencies' },
-  { prefix: '', value: 6000, suffix: '+', label: 'Community Members' },
-  { prefix: '', value: 40, suffix: '%', label: 'Operational Surplus' },
-  { prefix: '', value: 4, suffix: '', label: 'National Hackathons' },
+  { prefix: '', value: 30, suffix: '+', label: 'Mature Partner Agencies' },
+  { prefix: '', value: 12, suffix: '+', label: 'Total Events Managed' },
+  { prefix: '', value: 4, suffix: '', label: '24H National Hackathons' },
+  { prefix: '', value: 40, suffix: '%', label: 'Avg Operational Surplus' },
 ];
 
 function StatBlock({ stat, size = 'primary', index = 0 }) {
@@ -51,55 +51,62 @@ function StatBlock({ stat, size = 'primary', index = 0 }) {
       className="reveal"
       style={{ textAlign: 'center', padding: '24px 16px' }}
     >
-      <div
-        className="money-badge money-badge-gold"
-        style={{
-          display: 'inline-flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          background: 'rgba(245,200,66,0.05)',
-          border: '1px solid rgba(245,200,66,0.15)',
-          borderRadius: '16px',
-          padding: '20px 28px',
-          gap: '8px',
-        }}
+      <div 
+        className="premium-moving-border"
+        style={{ width: '100%', height: '100%' }}
       >
-        <span
+        <div
+          className="premium-moving-inner"
           style={{
-            fontFamily: "'JetBrains Mono', monospace",
-            fontWeight: 700,
-            fontSize,
-            color: 'var(--gold)',
-            textShadow: 'var(--glow-gold)',
-            lineHeight: 1,
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            background: 'linear-gradient(135deg, #0A0A0A, #111111)',
+            borderRadius: '18px',
+            padding: '32px 24px',
+            gap: '12px',
+            width: '100%',
+            height: '100%',
           }}
         >
-          {stat.prefix}
-          {isVisible ? (
-            <CountUp
-              start={0}
-              end={stat.value}
-              duration={2.2}
-              decimals={stat.decimals || 0}
-              separator=","
-            />
-          ) : (
-            '0'
-          )}
-          {stat.suffix}
-        </span>
-        <span
-          style={{
-            fontFamily: "'Inter', sans-serif",
-            fontSize: '12px',
-            fontWeight: 500,
-            color: 'var(--slate-400)',
-            letterSpacing: '0.05em',
-            textTransform: 'uppercase',
-          }}
-        >
-          {stat.label}
-        </span>
+          <span
+            style={{
+              fontFamily: "'JetBrains Mono', monospace",
+              fontWeight: 800,
+              fontSize,
+              color: 'var(--white)',
+              textShadow: '0 0 20px rgba(212, 175, 55, 0.4), 0 0 40px rgba(205, 127, 50, 0.3)', // Mix of gold and bronze
+              lineHeight: 1,
+            }}
+          >
+            {stat.prefix}
+            {isVisible ? (
+              <CountUp
+                start={0}
+                end={stat.value}
+                duration={2.2}
+                decimals={stat.decimals || 0}
+                separator=","
+              />
+            ) : (
+              '0'
+            )}
+            {stat.suffix}
+          </span>
+          <span
+            style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: '13px',
+              fontWeight: 600,
+              color: 'var(--slate-300)',
+              letterSpacing: '0.08em',
+              textTransform: 'uppercase',
+            }}
+          >
+            {stat.label}
+          </span>
+        </div>
       </div>
     </div>
   );
@@ -119,7 +126,10 @@ export default function StatsCounters() {
       <div className="container">
         <div style={{ textAlign: 'center', marginBottom: '60px' }}>
           <SectionLabel text="// THE PROOF BY NUMBERS" />
-          <AnimatedHeading as="h2">The Infrastructure, By Numbers.</AnimatedHeading>
+          <AnimatedHeading as="h2" style={{ marginBottom: '16px' }}>The Infrastructure, By Numbers.</AnimatedHeading>
+          <p style={{ maxWidth: '640px', margin: '0 auto', fontSize: '17px', lineHeight: 1.7, color: 'var(--slate-400)' }}>
+            Managing diverse scales—from 24-hour national tech hackathons to entrepreneurship summits, student welfare initiatives, and PoliceMitra welfare events.
+          </p>
         </div>
 
         {/* Primary row */}
@@ -162,6 +172,38 @@ export default function StatsCounters() {
           .stats-primary, .stats-secondary {
             grid-template-columns: 1fr 1fr !important;
           }
+        }
+        
+        @property --premium-angle {
+          syntax: '<angle>';
+          inherits: true;
+          initial-value: 0deg;
+        }
+        
+        .premium-moving-border {
+          position: relative;
+          border-radius: 20px;
+          padding: 2px;
+          background: conic-gradient(
+            from var(--premium-angle),
+            rgba(212, 175, 55, 0.8) 0deg,      /* Gold */
+            rgba(255, 255, 255, 0.9) 90deg,    /* White */
+            rgba(205, 127, 50, 0.8) 180deg,    /* Bronze */
+            rgba(212, 175, 55, 0.2) 270deg,    /* Dim Gold */
+            rgba(212, 175, 55, 0.8) 360deg
+          );
+          animation: spinPremium 6s linear infinite;
+          box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .premium-moving-border:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 15px 40px rgba(212, 175, 55, 0.2), 0 0 20px rgba(205, 127, 50, 0.3);
+        }
+        
+        @keyframes spinPremium {
+          to { --premium-angle: 360deg; }
         }
       `}</style>
     </section>

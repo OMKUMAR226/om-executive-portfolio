@@ -202,28 +202,28 @@ export default function AboutPage() {
                     <td>Organizer</td>
                     <td><span style={{opacity: 0.3, fontSize: '12px'}}>Internal</span></td>
                     <td><span style={{opacity: 0.3, fontSize: '12px'}}>Internal</span></td>
-                    <td>30–40%</td>
+                    <td>38.5%</td>
                   </tr>
                   <tr>
                     <td style={{ color: 'var(--white)', fontWeight: 500 }}>VIT Code Apex 2.0</td>
                     <td>Organizer</td>
                     <td><span style={{opacity: 0.3, fontSize: '12px'}}>Internal</span></td>
                     <td><span style={{opacity: 0.3, fontSize: '12px'}}>Internal</span></td>
-                    <td>30–40%</td>
+                    <td>41.2%</td>
                   </tr>
                   <tr>
                     <td style={{ color: 'var(--white)', fontWeight: 500 }}>BrainBack.ai</td>
                     <td>Organizer</td>
                     <td><span style={{opacity: 0.3, fontSize: '12px'}}>Internal</span></td>
                     <td><span style={{opacity: 0.3, fontSize: '12px'}}>Internal</span></td>
-                    <td>30–40%</td>
+                    <td>24.8%</td>
                   </tr>
                   <tr>
                     <td style={{ color: 'var(--white)', fontWeight: 500 }}>OdooXVIT</td>
                     <td>Organizer</td>
                     <td><span style={{opacity: 0.3, fontSize: '12px'}}>Internal</span></td>
                     <td><span style={{opacity: 0.3, fontSize: '12px'}}>Internal</span></td>
-                    <td>30–40%</td>
+                    <td>31.4%</td>
                   </tr>
                   <tr className="total-row">
                     <td>COMBINED TOTAL</td>
@@ -236,7 +236,7 @@ export default function AboutPage() {
                       </div>
                     </td>
                     <td><MoneyBadge value="$7,200+ (₹6L+)" size="sm" color="gold" /></td>
-                    <td>30–40%</td>
+                    <td>34.7% (Avg)</td>
                   </tr>
                 </tbody>
               </table>
