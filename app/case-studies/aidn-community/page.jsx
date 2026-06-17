@@ -128,7 +128,7 @@ export default function AIDNPage() {
                     <div className="timeline-dot" />
                   </div>
                   <div style={{ paddingBottom: '32px', paddingTop: '2px' }}>
-                    <div style={{ fontSize: '13px', color: 'var(--sky)', fontFamily: "'JetBrains Mono', monospace", marginBottom: '8px' }}>JAN 2025</div>
+                    <div style={{ fontSize: '13px', color: 'var(--sky)', fontFamily: "'JetBrains Mono', monospace", marginBottom: '8px' }}>JUN 2025</div>
                     <h3 style={{ fontSize: '18px', color: 'var(--white)', marginBottom: '8px', margin: 0 }}>AISF Founded</h3>
                     <p style={{ fontSize: '14px', color: 'var(--slate-400)', margin: 0 }}>Zero members, zero budget, zero ad spend.</p>
                   </div>
@@ -139,7 +139,7 @@ export default function AIDNPage() {
                     <div className="timeline-dot" />
                   </div>
                   <div style={{ paddingBottom: '32px', paddingTop: '2px' }}>
-                    <div style={{ fontSize: '13px', color: 'var(--sky)', fontFamily: "'JetBrains Mono', monospace", marginBottom: '8px' }}>MAR 2025</div>
+                    <div style={{ fontSize: '13px', color: 'var(--sky)', fontFamily: "'JetBrains Mono', monospace", marginBottom: '8px' }}>SEP 2025</div>
                     <h3 style={{ fontSize: '18px', color: 'var(--white)', marginBottom: '8px', margin: 0 }}>VIT Code Apex 1.0</h3>
                     <p style={{ fontSize: '14px', color: 'var(--slate-400)', margin: 0 }}>256 teams participated. Over ₹40,000+ ($480+) in prizes distributed.</p>
                   </div>
@@ -150,7 +150,7 @@ export default function AIDNPage() {
                     <div className="timeline-dot" />
                   </div>
                   <div style={{ paddingBottom: '32px', paddingTop: '2px' }}>
-                    <div style={{ fontSize: '13px', color: 'var(--sky)', fontFamily: "'JetBrains Mono', monospace", marginBottom: '8px' }}>JUN 2025</div>
+                    <div style={{ fontSize: '13px', color: 'var(--sky)', fontFamily: "'JetBrains Mono', monospace", marginBottom: '8px' }}>MAR 2026</div>
                     <h3 style={{ fontSize: '18px', color: 'var(--white)', marginBottom: '8px', margin: 0 }}>VIT Code Apex 2.0</h3>
                     <p style={{ fontSize: '14px', color: 'var(--slate-400)', margin: 0 }}>Scaled to 600 teams (2.3× growth). ₹70,000+ ($840+) prize pool.</p>
                   </div>
@@ -161,7 +161,7 @@ export default function AIDNPage() {
                     <div className="timeline-dot" />
                   </div>
                   <div style={{ paddingBottom: '32px', paddingTop: '2px' }}>
-                    <div style={{ fontSize: '13px', color: 'var(--sky)', fontFamily: "'JetBrains Mono', monospace", marginBottom: '8px' }}>AUG 2025</div>
+                    <div style={{ fontSize: '13px', color: 'var(--sky)', fontFamily: "'JetBrains Mono', monospace", marginBottom: '8px' }}>MAR 2026</div>
                     <h3 style={{ fontSize: '18px', color: 'var(--white)', marginBottom: '8px', margin: 0 }}>BrainBack.ai</h3>
                     <p style={{ fontSize: '14px', color: 'var(--slate-400)', margin: 0 }}>56 high-tier CSAI teams. Paid internships awarded directly.</p>
                   </div>
@@ -172,8 +172,8 @@ export default function AIDNPage() {
                     <div className="timeline-dot" style={{ background: 'var(--gold)' }} />
                   </div>
                   <div style={{ paddingTop: '2px' }}>
-                    <div style={{ fontSize: '13px', color: 'var(--gold)', fontFamily: "'JetBrains Mono', monospace", marginBottom: '8px' }}>OCT 2025</div>
-                    <h3 style={{ fontSize: '18px', color: 'var(--white)', marginBottom: '8px', margin: 0 }}>OdooXVIT</h3>
+                    <div style={{ fontSize: '13px', color: 'var(--gold)', fontFamily: "'JetBrains Mono', monospace", marginBottom: '8px' }}>MAY 2026</div>
+                    <h3 style={{ fontSize: '18px', color: 'var(--white)', marginBottom: '8px', margin: 0 }}>Odoo X VIT Pune</h3>
                     <p style={{ fontSize: '14px', color: 'var(--slate-400)', margin: 0 }}>Massive scale event with ₹1.45L+ ($1.7k+) prize pool.</p>
                   </div>
                 </div>
