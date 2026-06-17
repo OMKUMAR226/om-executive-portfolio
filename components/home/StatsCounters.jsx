@@ -30,29 +30,26 @@ function StatBlock({ stat, size = 'primary', index = 0 }) {
     const obs = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setTimeout(() => {
-            el.classList.add('visible');
-            setIsVisible(true);
-          }, index * 100);
+          // Fire counter as soon as it enters viewport
+          setIsVisible(true);
           obs.disconnect();
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.1 }
     );
     obs.observe(el);
     return () => obs.disconnect();
   }, [index]);
 
-  const fontSize = size === 'primary' ? 'clamp(40px, 5vw, 64px)' : 'clamp(28px, 3.5vw, 40px)';
+  const fontSize = size === 'primary' ? 'clamp(36px, 4vw, 56px)' : 'clamp(28px, 3vw, 40px)';
 
   return (
     <div
       ref={ref}
-      className="reveal"
-      style={{ textAlign: 'center', padding: '24px 16px' }}
+      style={{ textAlign: 'center', height: '100%' }}
     >
       <div 
-        className="premium-moving-border"
+        className="premium-moving-border marquee-hover-card"
         style={{ width: '100%', height: '100%' }}
       >
         <div
@@ -76,8 +73,9 @@ function StatBlock({ stat, size = 'primary', index = 0 }) {
               fontWeight: 800,
               fontSize,
               color: 'var(--white)',
-              textShadow: '0 0 20px rgba(212, 175, 55, 0.4), 0 0 40px rgba(205, 127, 50, 0.3)', // Mix of gold and bronze
+              textShadow: '0 0 20px rgba(212, 175, 55, 0.4), 0 0 40px rgba(205, 127, 50, 0.3)',
               lineHeight: 1,
+              whiteSpace: 'nowrap'
             }}
           >
             {stat.prefix}
@@ -85,7 +83,7 @@ function StatBlock({ stat, size = 'primary', index = 0 }) {
               <CountUp
                 start={0}
                 end={stat.value}
-                duration={2.2}
+                duration={2.5}
                 decimals={stat.decimals || 0}
                 separator=","
               />
@@ -102,6 +100,7 @@ function StatBlock({ stat, size = 'primary', index = 0 }) {
               color: 'var(--slate-300)',
               letterSpacing: '0.08em',
               textTransform: 'uppercase',
+              whiteSpace: 'nowrap'
             }}
           >
             {stat.label}
@@ -111,6 +110,27 @@ function StatBlock({ stat, size = 'primary', index = 0 }) {
     </div>
   );
 }
+
+const MarqueeSet = ({ stats, size }) => (
+  <div style={{ display: 'flex', gap: '24px', paddingRight: '24px' }}>
+    {stats.map((stat, i) => (
+      <div key={`${stat.label}-${i}`} style={{ width: 'clamp(300px, 25vw, 400px)', flexShrink: 0 }}>
+        <StatBlock stat={stat} size={size} index={i} />
+      </div>
+    ))}
+  </div>
+);
+
+const MarqueeTrack = ({ stats, direction = 'left', size = 'primary' }) => {
+  return (
+    <div className={`marquee-track ${direction}`}>
+      <MarqueeSet stats={stats} size={size} />
+      <MarqueeSet stats={stats} size={size} />
+      <MarqueeSet stats={stats} size={size} />
+      <MarqueeSet stats={stats} size={size} />
+    </div>
+  );
+};
 
 export default function StatsCounters() {
   return (
@@ -132,48 +152,69 @@ export default function StatsCounters() {
           </p>
         </div>
 
-        {/* Primary row */}
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(4, 1fr)',
-            gap: '16px',
-            marginBottom: '16px',
-          }}
-          className="stats-primary"
-        >
-          {PRIMARY_STATS.map((stat, i) => (
-            <StatBlock key={stat.label} stat={stat} size="primary" index={i} />
-          ))}
-        </div>
-
-        {/* Secondary row */}
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(4, 1fr)',
-            gap: '16px',
-          }}
-          className="stats-secondary"
-        >
-          {SECONDARY_STATS.map((stat, i) => (
-            <StatBlock key={stat.label} stat={stat} size="secondary" index={i + 4} />
-          ))}
+        {/* Infinite Marquee Section */}
+        <div className="marquee-wrapper">
+          <MarqueeTrack stats={PRIMARY_STATS} direction="left" size="primary" />
+          <MarqueeTrack stats={SECONDARY_STATS} direction="right" size="secondary" />
         </div>
       </div>
 
       <style>{`
-        @media (max-width: 900px) {
-          .stats-primary, .stats-secondary {
-            grid-template-columns: repeat(2, 1fr) !important;
-          }
+        .marquee-wrapper {
+          position: relative;
+          width: 100vw;
+          max-width: 100%;
+          left: 50%;
+          right: 50%;
+          margin-left: -50vw;
+          margin-right: -50vw;
+          overflow: hidden;
+          padding: 24px 0;
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+          mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+          -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
         }
-        @media (max-width: 480px) {
-          .stats-primary, .stats-secondary {
-            grid-template-columns: 1fr 1fr !important;
-          }
+
+        .marquee-wrapper:hover .marquee-track {
+          animation-play-state: paused;
         }
-        
+
+        .marquee-track {
+          display: flex;
+          width: max-content;
+          will-change: transform;
+        }
+
+        .marquee-track.left {
+          animation: scrollLeft 45s linear infinite;
+        }
+
+        .marquee-track.right {
+          animation: scrollRight 45s linear infinite;
+        }
+
+        @keyframes scrollLeft {
+          from { transform: translateX(0); }
+          to { transform: translateX(-25%); }
+        }
+
+        @keyframes scrollRight {
+          from { transform: translateX(-25%); }
+          to { transform: translateX(0); }
+        }
+
+        .marquee-hover-card {
+          transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .marquee-hover-card:hover {
+          transform: scale(1.02);
+          box-shadow: 0 15px 50px rgba(212, 175, 55, 0.3), 0 0 30px rgba(205, 127, 50, 0.4) !important;
+          z-index: 10;
+        }
+
         @property --premium-angle {
           syntax: '<angle>';
           inherits: true;
@@ -194,12 +235,6 @@ export default function StatsCounters() {
           );
           animation: spinPremium 6s linear infinite;
           box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .premium-moving-border:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 15px 40px rgba(212, 175, 55, 0.2), 0 0 20px rgba(205, 127, 50, 0.3);
         }
         
         @keyframes spinPremium {
