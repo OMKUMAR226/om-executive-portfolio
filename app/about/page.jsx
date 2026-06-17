@@ -186,11 +186,13 @@ export default function AboutPage() {
               <h3 style={{ fontSize: '20px', color: 'var(--white)', margin: 0 }}>Events Managed — Financial Record</h3>
             </div>
             <div style={{ overflowX: 'auto' }}>
-              <table className="data-table" style={{ minWidth: '500px' }}>
+              <table className="data-table" style={{ minWidth: '700px' }}>
                 <thead>
                   <tr>
                     <th>Event</th>
                     <th>Role</th>
+                    <th>Budget</th>
+                    <th>Revenue</th>
                     <th>Surplus</th>
                   </tr>
                 </thead>
@@ -198,30 +200,50 @@ export default function AboutPage() {
                   <tr>
                     <td style={{ color: 'var(--white)', fontWeight: 500 }}>VIT Code Apex 1.0</td>
                     <td>Organizer</td>
+                    <td><span style={{opacity: 0.3, fontSize: '12px'}}>Internal</span></td>
+                    <td><span style={{opacity: 0.3, fontSize: '12px'}}>Internal</span></td>
                     <td>30–40%</td>
                   </tr>
                   <tr>
                     <td style={{ color: 'var(--white)', fontWeight: 500 }}>VIT Code Apex 2.0</td>
                     <td>Organizer</td>
+                    <td><span style={{opacity: 0.3, fontSize: '12px'}}>Internal</span></td>
+                    <td><span style={{opacity: 0.3, fontSize: '12px'}}>Internal</span></td>
                     <td>30–40%</td>
                   </tr>
                   <tr>
                     <td style={{ color: 'var(--white)', fontWeight: 500 }}>BrainBack.ai</td>
                     <td>Organizer</td>
+                    <td><span style={{opacity: 0.3, fontSize: '12px'}}>Internal</span></td>
+                    <td><span style={{opacity: 0.3, fontSize: '12px'}}>Internal</span></td>
                     <td>30–40%</td>
                   </tr>
                   <tr>
                     <td style={{ color: 'var(--white)', fontWeight: 500 }}>OdooXVIT</td>
                     <td>Organizer</td>
+                    <td><span style={{opacity: 0.3, fontSize: '12px'}}>Internal</span></td>
+                    <td><span style={{opacity: 0.3, fontSize: '12px'}}>Internal</span></td>
                     <td>30–40%</td>
                   </tr>
                   <tr className="total-row">
-                    <td>COMBINED AVERAGE</td>
-                    <td>—</td>
+                    <td>COMBINED TOTAL</td>
+                    <td></td>
+                    <td>
+                      <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+                        <MoneyBadge value="$8,100+ (₹6.7L+)" size="sm" color="gold" />
+                        <span style={{ fontSize: '12px', color: 'var(--slate-400)' }}>/</span>
+                        <MoneyBadge value="₹6.77L+" size="sm" color="gold" />
+                      </div>
+                    </td>
+                    <td><MoneyBadge value="$7,200+ (₹6L+)" size="sm" color="gold" /></td>
                     <td>30–40%</td>
                   </tr>
                 </tbody>
               </table>
+            </div>
+            <div style={{ padding: '24px 32px', background: 'rgba(255,255,255,0.02)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '16px' }}>
+              <span style={{ fontSize: '14px', color: 'var(--slate-300)' }}>Developer prizes personally secured across all events:</span>
+              <MoneyBadge value="$4,100+ (₹3.4L+)" size="lg" color="gold" />
             </div>
           </GlassCard>
         </div>

@@ -60,7 +60,7 @@ export default function Footer() {
           maxWidth: '1200px',
           margin: '0 auto',
           display: 'grid',
-          gridTemplateColumns: 'repeat(3, 1fr)',
+          gridTemplateColumns: 'repeat(2, 1fr)',
           gap: '48px',
           paddingBottom: '48px',
         }}
@@ -155,42 +155,6 @@ export default function Footer() {
             >
               <MessageCircle size={18} />
             </a>
-          </div>
-        </div>
-
-        {/* Col 2 — Navigation */}
-        <div>
-          <div
-            style={{
-              fontFamily: "'JetBrains Mono', monospace",
-              fontSize: '11px',
-              color: 'var(--sky)',
-              letterSpacing: '0.15em',
-              textTransform: 'uppercase',
-              marginBottom: '16px',
-            }}
-          >
-            Navigation
-          </div>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-            {NAV_LINKS.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                style={{
-                  fontFamily: "'Inter', sans-serif",
-                  fontSize: '14px',
-                  color: 'var(--slate-400)',
-                  textDecoration: 'none',
-                  transition: 'color 0.2s ease',
-                  width: 'fit-content',
-                }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--sky)')}
-                onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--slate-400)')}
-              >
-                {link.label}
-              </Link>
-            ))}
           </div>
         </div>
 
