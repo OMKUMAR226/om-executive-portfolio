@@ -138,12 +138,13 @@ export default function StatsCounters() {
       id="stats"
       style={{
         background: 'var(--navy-900)',
-        padding: '96px 32px',
+        padding: '96px 0',
         borderTop: '1px solid rgba(56,189,248,0.06)',
         borderBottom: '1px solid rgba(56,189,248,0.06)',
+        overflow: 'hidden'
       }}
     >
-      <div className="container">
+      <div className="container" style={{ padding: '0 32px' }}>
         <div style={{ textAlign: 'center', marginBottom: '60px' }}>
           <SectionLabel text="// THE PROOF BY NUMBERS" />
           <AnimatedHeading as="h2" style={{ marginBottom: '16px' }}>The Infrastructure, By Numbers.</AnimatedHeading>
@@ -152,22 +153,18 @@ export default function StatsCounters() {
           </p>
         </div>
 
-        {/* Infinite Marquee Section */}
-        <div className="marquee-wrapper">
-          <MarqueeTrack stats={PRIMARY_STATS} direction="left" size="primary" />
-          <MarqueeTrack stats={SECONDARY_STATS} direction="right" size="secondary" />
-        </div>
+      </div>
+
+      {/* Infinite Marquee Section */}
+      <div className="marquee-wrapper">
+        <MarqueeTrack stats={PRIMARY_STATS} direction="left" size="primary" />
+        <MarqueeTrack stats={SECONDARY_STATS} direction="right" size="secondary" />
       </div>
 
       <style>{`
         .marquee-wrapper {
           position: relative;
-          width: 100vw;
-          max-width: 100%;
-          left: 50%;
-          right: 50%;
-          margin-left: -50vw;
-          margin-right: -50vw;
+          width: 100%;
           overflow: hidden;
           padding: 24px 0;
           display: flex;
