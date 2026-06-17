@@ -4,10 +4,10 @@ import MoneyBadge from '@/components/shared/MoneyBadge';
 import MagneticButton from '@/components/shared/MagneticButton';
 
 const ENGAGEMENT_PILLS = [
-  'India Operations Lead',
-  'Co-Founder / Equity',
-  'Retained Partner',
-  'Board Advisor',
+  'India GTM & Operations',
+  'Chief of Staff',
+  'Venture Studio Partner',
+  'Community Architect',
 ];
 
 export default function FinalCTA() {

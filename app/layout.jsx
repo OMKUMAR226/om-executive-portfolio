@@ -15,7 +15,7 @@ export const metadata = {
     template: '%s | Om Kumar Garg',
   },
   description:
-    '30+ agencies. 6,000+ developers. $8,100+ events managed. Om Kumar Garg is India\'s most deployable embedded operations partner for foreign companies. Available immediately.',
+    '30+ agencies. 6,000+ developers. $8,100+ events managed. Om Kumar Garg is India\'s most deployable embedded operations partner for foreign companies. Open to select partnerships.',
   keywords: [
     'India market entry', 'India operations lead', 'ecosystem architect',
     'co-founder India', 'VIT Pune', 'remote India partner', 'full stack developer India',

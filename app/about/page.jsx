@@ -266,14 +266,14 @@ export default function AboutPage() {
           <GlassCard style={{ padding: '40px' }}>
             <h3 style={{ fontSize: '20px', color: 'var(--white)', marginBottom: '24px' }}>Engagement Options</h3>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '24px' }}>
-              {['Full-Time India Operations Lead', 'Co-Founder / Equity Partner', 'Retained Strategic Partner', 'Board Advisor'].map(role => (
+              {['India GTM & Operations Lead', 'Chief of Staff / Head of Special Projects', 'Venture Studio Partner', 'Developer Ecosystem / Community Architect'].map(role => (
                 <div key={role} style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(56,189,248,0.1)', padding: '16px', borderRadius: '12px', fontSize: '14px', color: 'var(--slate-200)', fontWeight: 500, textAlign: 'center' }}>
                   {role}
                 </div>
               ))}
             </div>
             <div style={{ textAlign: 'center', fontSize: '12px', color: 'var(--slate-400)', fontFamily: "'JetBrains Mono', monospace" }}>
-              Remote-First · Available Immediately · US / AUS / UAE / NZ
+              Remote-First · Open to Select Partnerships · US / AUS / UAE / EU
             </div>
           </GlassCard>
 
