@@ -84,7 +84,7 @@ export default function AuditPopup() {
           whileTap={{ scale: 0.95 }}
         >
           <Sparkles size={16} fill="#000" />
-          FOUNDER'S OFFER
+          STRATEGIC OFFER
         </motion.button>
       ) : (
         <div 
@@ -120,7 +120,7 @@ export default function AuditPopup() {
             <div style={{ padding: '20px' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
                 <div style={{ padding: '4px 8px', background: 'rgba(244, 63, 94, 0.1)', border: '1px solid rgba(244, 63, 94, 0.2)', borderRadius: '4px', color: 'var(--red-pain)', fontSize: '10px', fontFamily: "'JetBrains Mono', monospace", letterSpacing: '0.05em', fontWeight: 600 }}>
-                  FOUNDER'S OFFER
+                  STRATEGIC OFFER
                 </div>
                 <button 
                   onClick={handleClose}
@@ -148,7 +148,7 @@ export default function AuditPopup() {
 
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' }}>
                 <a 
-                  href={PERSONAL.whatsapp}
+                  href={`${PERSONAL.whatsapp}?text=${encodeURIComponent("Hi Om, I saw your portfolio. I'm interested in the India Market Audit and your capabilities for mass audience ground-level surveys. Let's connect!")}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
