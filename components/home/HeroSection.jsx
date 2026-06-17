@@ -285,9 +285,9 @@ export default function HeroSection() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', borderTop: '1px solid rgba(56,189,248,0.1)', paddingTop: '20px' }}>
                   {[
                     { icon: '🎓', text: 'VIT Pune — B.Tech CS & AI · 2027' },
-                    { icon: '📊', text: null, badges: ['9.58/10 SGPA', '8.78 CGPA'] },
-                    { icon: '📜', text: 'IBM Full Stack Certified · 15-Course' },
-                    { icon: '🔬', text: 'Patent Filed in India' },
+                    { icon: '🌐', text: 'India Market Lead' },
+                    { icon: '🔗', text: '6,000+ Dev Pipeline & 30+ Agencies' },
+                    { icon: '🔬', text: 'Inventor — Patent Filed in India' },
                     { icon: '📚', text: '2 Scopus/Springer Publications' },
                   ].map((row, i) => (
                     <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
@@ -313,21 +313,21 @@ export default function HeroSection() {
                   borderTop: '1px solid rgba(56,189,248,0.1)', paddingTop: '20px',
                 }}>
                   <div style={{ textAlign: 'center' }}>
-                    <MoneyBadge value="15-Course" size="md" color="sky" />
+                    <MoneyBadge value="6,000+" size="md" color="sky" />
                     <div style={{ fontFamily: "'Inter', sans-serif", fontSize: '10px', color: 'var(--slate-400)', marginTop: '4px', textTransform: 'uppercase', letterSpacing: '1px' }}>
-                      IBM Certified
+                      Dev Pipeline
+                    </div>
+                  </div>
+                  <div style={{ textAlign: 'center' }}>
+                    <MoneyBadge value="30+" size="md" color="gold" />
+                    <div style={{ fontFamily: "'Inter', sans-serif", fontSize: '10px', color: 'var(--slate-400)', marginTop: '4px', textTransform: 'uppercase', letterSpacing: '1px' }}>
+                      Agencies
                     </div>
                   </div>
                   <div style={{ textAlign: 'center' }}>
                     <MoneyBadge value="Govt. Patent" size="md" color="emerald" />
                     <div style={{ fontFamily: "'Inter', sans-serif", fontSize: '10px', color: 'var(--slate-400)', marginTop: '4px', textTransform: 'uppercase', letterSpacing: '1px' }}>
                       WallBreach Filed
-                    </div>
-                  </div>
-                  <div style={{ textAlign: 'center' }}>
-                    <MoneyBadge value="2 Pubs" size="md" color="gold" />
-                    <div style={{ fontFamily: "'Inter', sans-serif", fontSize: '10px', color: 'var(--slate-400)', marginTop: '4px', textTransform: 'uppercase', letterSpacing: '1px' }}>
-                      Scopus / Springer
                     </div>
                   </div>
                 </div>
