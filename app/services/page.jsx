@@ -1,4 +1,4 @@
-import { Globe, Network, Users, Code, FlaskConical, Building2, Megaphone, Smartphone, Search } from 'lucide-react';
+import { Globe, Network, Users, Code, FlaskConical, Building2, Megaphone, Smartphone, Search, Target } from 'lucide-react';
 import AnimatedHeading from '@/components/shared/AnimatedHeading';
 import GlassCard from '@/components/shared/GlassCard';
 import MoneyBadge from '@/components/shared/MoneyBadge';
@@ -6,7 +6,7 @@ import SectionLabel from '@/components/shared/SectionLabel';
 import MagneticButton from '@/components/shared/MagneticButton';
 
 export const metadata = {
-  title: 'Services | Eight Capabilities. One Operator. Day 1.',
+  title: 'Services | Nine Capabilities. One Operator. Day 1.',
   description: 'India Market Entry Architecture, 30+ Agencies, 6,000+ Developers, Full Stack Dev, and GTM Strategy. One person. One conversation.',
 };
 
@@ -85,6 +85,15 @@ const SERVICES = [
     who: 'Companies exploring the Indian market with zero risk.',
     result: 'Clarity on whether India is right for your product.',
   },
+  {
+    icon: Target,
+    title: 'Mass Audience Ground-Level Surveys.',
+    tag: 'CONSUMER TRUTH & DEMOGRAPHIC INTELLIGENCE',
+    badge: { val: 'STOP GUESSING. START KNOWING.', color: 'red' },
+    body: "What is it actually costing you to launch blind into a 1.47 billion population market? It feels risky entering a new geography, I get it—the fear of burning capital on the wrong audience is paralyzing. But stop guessing. I command a 6,000-strong developer army and an airtight agency network. We deploy massive, ground-level demographic surveys to extract raw, unfiltered consumer truth before you spend a single dollar on deployment. We don't guess—we know, and we dominate. You get the exact data to guarantee your outcome.",
+    who: 'Businesses and service providers who refuse to fail on entry.',
+    result: 'Raw consumer truth before you burn a single dollar.',
+  },
 ];
 
 export default function ServicesPage() {
@@ -95,7 +104,7 @@ export default function ServicesPage() {
         <div className="container" style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
           <SectionLabel text="// DELIVERABLES" />
           <AnimatedHeading as="h1">
-            Eight Capabilities. One Operator. Day 1.
+            Nine Capabilities. One Operator. Day 1.
           </AnimatedHeading>
         </div>
       </section>
