@@ -3,7 +3,8 @@ import PainSection from '@/components/home/PainSection';
 import MarqueeTicker from '@/components/home/MarqueeTicker';
 import CapabilitiesGrid from '@/components/home/CapabilitiesGrid';
 import DisruptiveAdvantage from '@/components/home/DisruptiveAdvantage';
-import StatsCounters from '@/components/home/StatsCounters';
+import MetricsMarquee from '@/components/home/MetricsMarquee';
+import EcosystemGraph from '@/components/home/EcosystemGraph';
 import CaseStudyPreviews from '@/components/home/CaseStudyPreviews';
 import WhoThisIsFor from '@/components/home/WhoThisIsFor';
 import FinalCTA from '@/components/home/FinalCTA';
@@ -22,7 +23,8 @@ export default function HomePage() {
       <MarqueeTicker />
       <CapabilitiesGrid />
       <DisruptiveAdvantage />
-      <StatsCounters />
+      <MetricsMarquee />
+      <EcosystemGraph />
       <CaseStudyPreviews />
       <WhoThisIsFor />
       <FinalCTA />
