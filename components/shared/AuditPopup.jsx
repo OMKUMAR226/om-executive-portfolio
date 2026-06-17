@@ -43,72 +43,61 @@ export default function AuditPopup() {
       {isOpen && (
         <div style={{
           position: 'fixed',
-          inset: 0,
-          zIndex: 9999,
+          bottom: '100px', // Just above the chatbot toggle
+          right: '24px',
+          zIndex: 200,
           display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          padding: '24px',
-          background: 'rgba(2, 6, 23, 0.8)',
-          backdropFilter: 'blur(8px)'
+          flexDirection: 'column'
         }}>
           <motion.div
-            initial={{ opacity: 0, scale: 0.95, y: 20 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.95, y: 20 }}
+            initial={{ opacity: 0, scale: 0.8, x: 20, y: 20 }}
+            animate={{ opacity: 1, scale: 1, x: 0, y: 0 }}
+            exit={{ opacity: 0, scale: 0.8, x: 20, y: 20 }}
             transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
             style={{
-              background: 'var(--navy-900)',
+              background: 'rgba(15, 23, 42, 0.95)',
+              backdropFilter: 'blur(10px)',
               border: '1px solid var(--gold)',
-              borderRadius: '16px',
-              maxWidth: '560px',
-              width: '100%',
+              borderRadius: '12px',
+              width: '340px',
               position: 'relative',
               overflow: 'hidden',
-              boxShadow: '0 20px 40px rgba(0,0,0,0.4), 0 0 40px rgba(245, 158, 11, 0.15)'
+              boxShadow: '0 10px 30px rgba(0,0,0,0.5), 0 0 20px rgba(245, 158, 11, 0.15)'
             }}
           >
             {/* Top accent line */}
-            <div style={{ height: '4px', width: '100%', background: 'linear-gradient(90deg, var(--gold), var(--sky))' }} />
+            <div style={{ height: '3px', width: '100%', background: 'linear-gradient(90deg, var(--gold), var(--sky))' }} />
             
-            <button 
-              onClick={() => setIsOpen(false)}
-              style={{
-                position: 'absolute',
-                top: '16px',
-                right: '16px',
-                background: 'none',
-                border: 'none',
-                color: 'var(--slate-400)',
-                cursor: 'pointer',
-                padding: '4px'
-              }}
-            >
-              <X size={20} />
-            </button>
-
-            <div style={{ padding: '32px' }}>
-              <div style={{ display: 'inline-block', padding: '6px 12px', background: 'rgba(245, 158, 11, 0.1)', border: '1px solid rgba(245, 158, 11, 0.2)', borderRadius: '100px', color: 'var(--gold)', fontSize: '11px', fontFamily: "'JetBrains Mono', monospace", letterSpacing: '0.05em', marginBottom: '20px' }}>
-                STRATEGIC OFFER
+            <div style={{ padding: '20px' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
+                <div style={{ padding: '4px 8px', background: 'rgba(244, 63, 94, 0.1)', border: '1px solid rgba(244, 63, 94, 0.2)', borderRadius: '4px', color: 'var(--red-pain)', fontSize: '10px', fontFamily: "'JetBrains Mono', monospace", letterSpacing: '0.05em', fontWeight: 600 }}>
+                  FOUNDER'S OFFER
+                </div>
+                <button 
+                  onClick={() => setIsOpen(false)}
+                  style={{ background: 'none', border: 'none', color: 'var(--slate-400)', cursor: 'pointer', padding: '0px' }}
+                >
+                  <X size={16} />
+                </button>
               </div>
               
-              <h2 style={{ fontSize: '24px', color: 'var(--white)', margin: '0 0 16px 0', lineHeight: 1.3 }}>
-                You are ignoring a 1.47 Billion population juggernaut.
-              </h2>
+              <h3 style={{ fontSize: '16px', color: 'var(--white)', margin: '0 0 10px 0', lineHeight: 1.3 }}>
+                Leaving 1.47 Billion on the Table?
+              </h3>
               
-              <div style={{ color: 'var(--slate-300)', fontSize: '15px', lineHeight: 1.6, display: 'flex', flexDirection: 'column', gap: '16px', marginBottom: '32px' }}>
+              <div style={{ color: 'var(--slate-300)', fontSize: '13px', lineHeight: 1.5, display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '16px' }}>
                 <p style={{ margin: 0 }}>
-                  It sounds like you know the potential of the Indian market, but scaling into unknown territory feels risky. I get it. But what is it costing your company right now to leave the largest market on Earth on the table?
+                  It's costing you more to <em>ignore</em> India than it is to enter it. Capturing even <strong>0.01%</strong> means massive, infinite ROI.
                 </p>
                 <p style={{ margin: 0 }}>
-                  Capturing even a microscopic <strong>0.01%</strong> of this demographic translates directly to a <strong>100X return</strong> and massive recurring revenue. 
+                  Get a ruthless, uncensored <strong>India Market Audit</strong>—raw TAM analysis, competitor dissection, & brutal regulatory truths.
                 </p>
-                <p style={{ margin: 0 }}>
-                  I am offering an uncensored, custom <strong>India Market Audit Report</strong> tailored to your exact product. You get a raw TAM analysis, competitor breakdown, and regulatory red flags. The investment? Just <strong>$99</strong>. No retainers. Just pure, actionable intelligence.
+                <p style={{ margin: 0, color: 'var(--white)' }}>
+                  Just <strong>$39</strong>. Pure, actionable intelligence.
                 </p>
               </div>
 
-              <div style={{ display: 'flex', gap: '12px', flexDirection: 'column' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' }}>
                 <a 
                   href={PERSONAL.whatsapp}
                   target="_blank"
@@ -117,22 +106,22 @@ export default function AuditPopup() {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    gap: '10px',
+                    gap: '6px',
                     background: 'var(--emerald)',
                     color: '#000',
-                    padding: '14px 24px',
-                    borderRadius: '8px',
+                    padding: '8px',
+                    borderRadius: '6px',
                     textDecoration: 'none',
                     fontWeight: 600,
-                    fontSize: '15px',
+                    fontSize: '12px',
                     transition: 'transform 0.2s ease',
                     cursor: 'pointer'
                   }}
                   onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
                   onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}
                 >
-                  <MessageCircle size={18} />
-                  Message on WhatsApp for Audit
+                  <MessageCircle size={14} />
+                  WhatsApp
                 </a>
                 <a 
                   href={PERSONAL.linkedin}
@@ -142,15 +131,15 @@ export default function AuditPopup() {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    gap: '10px',
+                    gap: '6px',
                     background: 'rgba(14, 165, 233, 0.1)',
                     border: '1px solid rgba(14, 165, 233, 0.3)',
                     color: 'var(--sky)',
-                    padding: '14px 24px',
-                    borderRadius: '8px',
+                    padding: '8px',
+                    borderRadius: '6px',
                     textDecoration: 'none',
                     fontWeight: 600,
-                    fontSize: '15px',
+                    fontSize: '12px',
                     transition: 'all 0.2s ease',
                     cursor: 'pointer'
                   }}
@@ -163,18 +152,9 @@ export default function AuditPopup() {
                     e.currentTarget.style.background = 'rgba(14, 165, 233, 0.1)';
                   }}
                 >
-                  <LinkedinIcon size={18} />
-                  Connect on LinkedIn
+                  <LinkedinIcon size={14} />
+                  LinkedIn
                 </a>
-              </div>
-              
-              <div style={{ textAlign: 'center', marginTop: '16px' }}>
-                <button 
-                  onClick={() => setIsOpen(false)}
-                  style={{ background: 'none', border: 'none', color: 'var(--slate-400)', fontSize: '13px', cursor: 'pointer', fontFamily: "'Inter', sans-serif" }}
-                >
-                  I'm not ready to scale yet.
-                </button>
               </div>
             </div>
           </motion.div>
