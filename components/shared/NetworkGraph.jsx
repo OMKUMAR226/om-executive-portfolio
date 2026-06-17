@@ -11,7 +11,7 @@ const NODES = [
   { id: 'csuite', label: 'C-Suite Net', x: 38, y: 88, r: 14, color: '#F5C842', detail: 'Direct relationships with executives across the Indian startup ecosystem' },
   { id: 'govt', label: 'Gov. Access', x: 12, y: 62, r: 13, color: '#F5C842', detail: 'Lines into government networks and academic incubators' },
   { id: 'hackathons', label: '4 Hackathons', x: 14, y: 36, r: 13, color: '#F5C842', detail: 'National scale execution with consistent 40% surplus' },
-  { id: 'budget', label: '$8.1k Managed', x: 62, y: 32, r: 15, color: '#F5C842', detail: 'Zero-risk capital deployment and event budget management' },
+  { id: 'budget', label: '$8.1k Managed', x: 62, y: 32, r: 15, color: '#F5C842', detail: 'Risk-mitigated capital deployment and event budget management' },
 ];
 
 export default function NetworkGraph({ animate = true }) {

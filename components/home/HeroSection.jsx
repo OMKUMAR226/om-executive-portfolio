@@ -146,7 +146,7 @@ export default function HeroSection() {
             <div className="hero-reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px', marginTop: '8px', marginBottom: '16px' }}>
               <div style={{ display: 'flex', flexDirection: 'column' }}>
                 <span style={{ fontSize: 'clamp(48px, 6vw, 64px)', fontWeight: 800, color: 'var(--gold)', lineHeight: 1, letterSpacing: '-0.03em' }}>30+</span>
-                <span style={{ color: 'var(--slate-400)', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '2px', marginTop: '4px' }}>Vetted Indian Agencies</span>
+                <span style={{ color: 'var(--slate-400)', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '2px', marginTop: '4px' }}>Mature Partner Agencies</span>
               </div>
               <div style={{ display: 'flex', flexDirection: 'column' }}>
                 <span style={{ fontSize: 'clamp(48px, 6vw, 64px)', fontWeight: 800, color: 'var(--gold)', lineHeight: 1, letterSpacing: '-0.03em' }}>$8.1k</span>
@@ -277,7 +277,7 @@ export default function HeroSection() {
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', justifyContent: 'center', marginTop: '10px' }}>
                     <span className="pill pill-gold">Global Hub: India</span>
                     <span className="pill pill-sky">Execution Architect</span>
-                    <span className="pill pill-emerald">Zero-Risk Operator</span>
+                    <span className="pill pill-emerald">Risk-Mitigated Operator</span>
                   </div>
                 </div>
 
@@ -286,7 +286,7 @@ export default function HeroSection() {
                   {[
                     { icon: '🎓', text: 'VIT Pune — B.Tech CS & AI · 2027' },
                     { icon: '🌐', text: 'India Market Lead' },
-                    { icon: '🔗', text: '6,000+ Dev Pipeline & 30+ Agencies' },
+                    { icon: '🔗', text: '6,000+ Dev Pipeline & 30+ Mature Agencies' },
                     { icon: '🔬', text: 'Inventor — Patent Filed in India' },
                     { icon: '📚', text: '2 Scopus/Springer Publications' },
                   ].map((row, i) => (
