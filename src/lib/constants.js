@@ -71,6 +71,15 @@ export const WHAT_I_BRING = [
     headline: '13+ Active Ecosystems',
     body: 'Established lines into key tech hubs, academic incubators, and government networks. Unmatched navigational speed for compliance, networking, and rapid India market entry.',
   },
+  {
+    id: 'mass-survey',
+    icon: 'search',
+    accentColor: 'red',
+    badge: '1.47 Billion Audience',
+    title: 'Ground-Level Surveys',
+    headline: 'Consumer Truth Over Guesses',
+    body: "What is it costing you to launch blind into a 1.47 billion population market? It feels risky entering a new geography—the fear of burning capital on the wrong audience is paralyzing. But stop guessing. I command a 6,000-strong developer army to deploy massive, ground-level demographic surveys and extract raw, unfiltered consumer truth before you spend a single dollar.",
+  },
 ];
 
 export const QUICK_SERVICES = [
