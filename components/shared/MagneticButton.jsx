@@ -65,8 +65,8 @@ export default function MagneticButton({
           <a
             ref={btnRef}
             href={href}
-            target="_blank"
-            rel="noopener noreferrer"
+            target={href.startsWith('mailto:') || href.startsWith('tel:') ? undefined : "_blank"}
+            rel={href.startsWith('mailto:') || href.startsWith('tel:') ? undefined : "noopener noreferrer"}
             className={`${variantClass} ${className}`}
             style={{ display: 'inline-flex', ...style }}
             id={id}
