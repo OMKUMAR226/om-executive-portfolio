@@ -3,7 +3,7 @@ import MoneyBadge from '@/components/shared/MoneyBadge';
 import AnimatedHeading from '@/components/shared/AnimatedHeading';
 
 export const metadata = {
-  title: 'MyBizPartner Case Study | ₹8.64L/Year Zero-Cost Acquisition',
+  title: 'MyBizPartner Case Study | Zero-Cost Acquisition',
 };
 
 export default function MyBizPartnerPage() {
@@ -12,7 +12,7 @@ export default function MyBizPartnerPage() {
       {/* Sticky Metrics Bar */}
       <div className="sticky-metrics-bar">
         <MoneyBadge value="35–40%" size="sm" color="sky" />
-        <MoneyBadge value="₹8.64L ($10.4k)/YEAR" size="sm" color="gold" />
+        <MoneyBadge value="35-40% COMMISSION" size="sm" color="gold" />
         <MoneyBadge value="₹72,000 ($860)/MONTH" size="sm" color="gold" />
         <MoneyBadge value="₹0 UPFRONT" size="sm" color="sky" />
         <MoneyBadge value="6 STAGES" size="sm" color="sky" />
@@ -30,7 +30,7 @@ export default function MyBizPartnerPage() {
           </div>
 
           <AnimatedHeading as="h1" style={{ marginBottom: '24px' }}>
-            Architecting a Zero-Cost B2B Acquisition Engine That Scales to ₹8.64L/Year
+            Architecting a Zero-Cost B2B Acquisition Engine
           </AnimatedHeading>
           
           <div style={{ fontFamily: "'JetBrains Mono', monospace", color: 'var(--slate-400)', fontSize: '14px', marginBottom: '40px' }}>
@@ -155,7 +155,7 @@ export default function MyBizPartnerPage() {
                     <td>Growth Phase</td>
                     <td>12 × ₹15k (40%)</td>
                     <td><MoneyBadge value="₹72,000 ($860)" size="sm" color="sky" /></td>
-                    <td><MoneyBadge value="₹8.64L ($10.4k)" size="md" color="gold" /></td>
+                    <td><MoneyBadge value="35-40%" size="md" color="gold" /></td>
                   </tr>
                 </tbody>
               </table>
@@ -165,7 +165,7 @@ export default function MyBizPartnerPage() {
           <div style={{ textAlign: 'center', marginBottom: '40px' }}>
             <h2 style={{ fontSize: '32px', color: 'var(--white)', marginBottom: '32px' }}>Final Results</h2>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', justifyContent: 'center' }}>
-              <MoneyBadge value="₹8.64L ($10.4k)/YEAR" size="xl" color="gold" />
+              <MoneyBadge value="35-40% COMMISSION" size="xl" color="gold" />
               <MoneyBadge value="₹72,000 ($860)/MONTH" size="xl" color="gold" />
               <MoneyBadge value="₹0 UPFRONT" size="xl" color="sky" />
               <MoneyBadge value="₹0 FEES WAIVED" size="xl" color="sky" />

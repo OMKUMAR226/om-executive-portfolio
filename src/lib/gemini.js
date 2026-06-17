@@ -63,7 +63,7 @@ SERVICES OFFERED:
 
 CASE STUDIES:
 - Ezodrop: Scaled Amazon dropshipping client acquisition by 48-59% through student network channels
-- J_Kaur EV: Built student-powered national EV distribution, ₹3,600-₹28,000 per sale commission
+- J_Kaur EV: Built student-powered national EV distribution, 40% gross margin
 - MyBizPartner: Architected zero-cost B2B acquisition engine with 35-40% commission structure
 - AISF Pune: 6,000+ members, 4 national hackathons, company-sponsored non-profit ecosystem
 

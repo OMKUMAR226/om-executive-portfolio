@@ -4,8 +4,8 @@ const GOLD_ITEMS = [
   '30–40% Surplus', 'IBM Certified', 'Patent Filed',
   'Scopus Indexed', 'Springer Indexed', 'VIT Pune',
   'NIT Kurukshetra', '4 National Hackathons', 'C-Suite Network',
-  '13+ Communities', 'Pan-India Distribution', '₹28,000/Deal',
-  '₹1,50,000/Month Client Potential',
+  '13+ Communities', 'Pan-India Distribution', 'Zero-Cost Acquisition',
+  '30+ Agencies', '40% Operational Surplus', 'IBM Certified',
 ];
 
 const SKY_ITEMS = [

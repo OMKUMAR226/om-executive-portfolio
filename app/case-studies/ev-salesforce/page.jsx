@@ -3,7 +3,7 @@ import MoneyBadge from '@/components/shared/MoneyBadge';
 import AnimatedHeading from '@/components/shared/AnimatedHeading';
 
 export const metadata = {
-  title: 'J_Kaur EV Case Study | ₹28,000/Deal National Distribution',
+  title: 'J_Kaur EV Case Study | National Distribution',
 };
 
 export default function EVCaseStudyPage() {
@@ -11,7 +11,7 @@ export default function EVCaseStudyPage() {
     <div style={{ paddingBottom: '120px' }}>
       {/* Sticky Metrics Bar */}
       <div className="sticky-metrics-bar">
-        <MoneyBadge value="₹28,000 ($335)/DEAL" size="sm" color="gold" />
+        <MoneyBadge value="PAN-INDIA DISTRIBUTION" size="sm" color="gold" />
         <MoneyBadge value="40% GROSS MARGIN" size="sm" color="sky" />
         <MoneyBadge value="₹0 INVENTORY" size="sm" color="sky" />
         <MoneyBadge value="PAN-INDIA" size="sm" color="sky" />
@@ -163,7 +163,7 @@ export default function EVCaseStudyPage() {
           <div style={{ textAlign: 'center', marginBottom: '40px' }}>
             <h2 style={{ fontSize: '32px', color: 'var(--white)', marginBottom: '32px' }}>Final Results</h2>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', justifyContent: 'center' }}>
-              <MoneyBadge value="₹28,000 ($335)/DEAL" size="xl" color="gold" />
+              <MoneyBadge value="PAN-INDIA DISTRIBUTION" size="xl" color="gold" />
               <MoneyBadge value="₹0 INVENTORY" size="xl" color="sky" />
               <MoneyBadge value="₹0 OVERHEAD" size="xl" color="sky" />
               <MoneyBadge value="PAN-INDIA" size="xl" color="gold" />
