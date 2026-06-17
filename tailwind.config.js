@@ -10,12 +10,6 @@ module.exports = {
       colors: {
         'bg-primary': '#050508',
         'bg-secondary': '#0a0a12',
-        'canvas': '#030303',
-        'surface': '#0A0A0A',
-        'accent': '#d4af37',
-        'accent-light': '#f3e5ab',
-        'accent-dark': '#aa8c2c',
-        'ambient': '#2563eb',
         'color-cyan': '#00D4FF',
         'color-violet': '#7C3AED',
         'color-orange': '#FF6B35',
@@ -88,8 +82,6 @@ module.exports = {
         'glow-green': '0 0 30px rgba(0,255,135,0.2)',
         'card': '0 4px 24px rgba(0,0,0,0.4)',
         'card-hover': '0 20px 40px rgba(0,212,255,0.1)',
-        'neumorphic-dark': 'inset 2px 2px 4px rgba(255,255,255,0.05), 4px 4px 10px rgba(0,0,0,0.8)',
-        'champagne-glow': '0 0 15px rgba(212, 175, 55, 0.4)',
       },
       backdropBlur: {
         xs: '2px',

@@ -16,7 +16,7 @@ const SECONDARY_STATS = [
   { prefix: '', value: 30, suffix: '+', label: 'Mature Partner Agencies' },
   { prefix: '', value: 12, suffix: '+', label: 'Total Events Managed' },
   { prefix: '', value: 4, suffix: '', label: '24H National Hackathons' },
-  { prefix: '', value: 40, suffix: '%', label: 'Avg Operational Surplus' },
+  { prefix: '', value: 2, suffix: '', label: 'Global Research Papers' },
 ];
 
 function StatBlock({ stat, size = 'primary', index = 0 }) {

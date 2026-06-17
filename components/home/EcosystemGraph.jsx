@@ -29,9 +29,9 @@ export default function EcosystemGraph() {
   });
 
   return (
-    <section className="py-24 bg-canvas flex justify-center items-center overflow-hidden relative min-h-screen">
+    <section className="py-24 bg-bg-primary flex justify-center items-center overflow-hidden relative min-h-screen">
       {/* Background Ambient Blur */}
-      <div className="absolute bg-[#2563eb]/10 blur-[120px] w-[500px] h-[500px] rounded-full pointer-events-none" />
+      <div className="absolute bg-gradient-cyan-violet blur-[120px] w-[500px] h-[500px] rounded-full opacity-20 pointer-events-none" />
 
       <div 
         className="relative" 
@@ -53,8 +53,8 @@ export default function EcosystemGraph() {
                 x2={`${50 + (nodePositions[index].x / radius) * 50}%`} 
                 y2={`${50 + (nodePositions[index].y / radius) * 50}%`}
               >
-                <stop offset="0%" stopColor="#d4af37" stopOpacity="0.8" />
-                <stop offset="100%" stopColor="#d4af37" stopOpacity="0" />
+                <stop offset="0%" stopColor="#00D4FF" stopOpacity="0.8" />
+                <stop offset="100%" stopColor="#00D4FF" stopOpacity="0" />
               </linearGradient>
             ))}
           </defs>
@@ -115,8 +115,8 @@ export default function EcosystemGraph() {
                   filter: isFaded ? 'blur(4px)' : 'none',
                   transition: 'opacity 0.4s ease, filter 0.4s ease, transform 0.4s ease'
                 }}
-                className={`acrylic-panel px-6 py-3 rounded-full flex items-center justify-center text-sm font-semibold font-inter text-text-primary whitespace-nowrap cursor-pointer ${
-                  isHovered ? 'border-[#d4af37] border-2 opacity-100 shadow-champagne-glow' : 'border border-[#d4af37]/30'
+                className={`glass px-6 py-3 rounded-full flex items-center justify-center text-sm font-semibold font-inter text-text-primary whitespace-nowrap cursor-pointer ${
+                  isHovered ? 'border-color-cyan border-2 opacity-100 shadow-glow-cyan' : 'border border-color-cyan/30'
                 }`}
               >
                 {title}
@@ -127,9 +127,9 @@ export default function EcosystemGraph() {
 
         {/* Central Node */}
         <div 
-          className="absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] rounded-full bg-[#0A0A0A] shadow-neumorphic-dark border-2 border-[#d4af37] flex items-center justify-center transition-transform duration-500 hover:scale-105"
+          className="absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] rounded-full bg-bg-secondary shadow-glow-cyan border-2 border-color-cyan flex items-center justify-center transition-transform duration-500 hover:scale-105"
         >
-          <span className="font-grotesk font-bold text-xl text-white tracking-widest drop-shadow-[0_0_8px_rgba(212,175,55,0.8)]">
+          <span className="font-grotesk font-bold text-xl text-white tracking-widest text-glow-cyan">
             INDIA
           </span>
         </div>
