@@ -168,7 +168,7 @@ export const SERVICES = [
     icon: '🔍',
     title: 'Initial India Market Audit',
     headline: 'Uncensored Truth.',
-    description: 'An initial audit for any company considering India. I provide an uncensored market opportunity brief with TAM analysis. India has 1.47 billion people. Capturing even 0.01% means steady recurring income.',
+    description: "An initial audit for any company considering India. India isn't just a region; it's a 1.47 billion population juggernaut. Capturing even a microscopic 0.01% of this demographic translates directly to a 100X return and massive recurring revenue. I provide the uncensored TAM analysis to show exactly what you are leaving on the table.",
     deliverables: ['Market Entry Playbook', 'TAM & Competition Analysis', 'Regulatory Red Flags', 'Local Vendor Costs'],
   },
   {
