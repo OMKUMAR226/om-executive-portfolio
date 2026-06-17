@@ -54,6 +54,13 @@ const CAPABILITIES = [
     badge: { val: 'GUARANTEED RESULTS', color: 'gold' },
     sub: 'From downloads to active users.',
   },
+  {
+    icon: '📊',
+    title: 'Mass Audience Ground-Level Surveys',
+    body: 'What is it costing you to launch blind into a 1.47 billion population market? I deploy massive, ground-level demographic surveys using a 6,000-strong army to extract raw, unfiltered consumer truth before you spend a single dollar.',
+    badge: { val: '1.47 BILLION AUDIENCE', color: 'red' },
+    sub: 'Stop guessing. Start knowing.',
+  },
 ];
 
 export default function CapabilitiesGrid() {
@@ -89,7 +96,7 @@ export default function CapabilitiesGrid() {
         <div style={{ textAlign: 'center', marginBottom: '64px' }}>
           <SectionLabel text="// THE INFRASTRUCTURE YOU GET — DAY 1" />
           <AnimatedHeading as="h2" style={{ marginBottom: '16px' }}>
-            One Operator. Eight Capabilities. Zero Ramp-Up.
+            One Operator. Nine Capabilities. Zero Ramp-Up.
           </AnimatedHeading>
           <p style={{ maxWidth: '560px', margin: '0 auto', fontSize: '17px', color: 'var(--slate-400)', lineHeight: 1.7 }}>
             This is an inventory of what walks in the door with me — already built, already operational.
