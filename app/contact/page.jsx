@@ -89,9 +89,9 @@ export default function ContactPage() {
                 <h3 style={{ fontSize: '20px', color: 'var(--white)', marginBottom: '24px' }}>Direct Lines</h3>
                 
                 <div style={{ padding: '16px', background: 'rgba(245,158,11,0.08)', border: '1px solid rgba(245,158,11,0.2)', borderRadius: '12px', marginBottom: '32px' }}>
-                  <div style={{ fontSize: '12px', color: 'var(--gold)', fontFamily: "'JetBrains Mono', monospace", marginBottom: '8px', letterSpacing: '0.05em' }}>COMPLIMENTARY VALUE</div>
+                  <div style={{ fontSize: '12px', color: 'var(--gold)', fontFamily: "'JetBrains Mono', monospace", marginBottom: '8px', letterSpacing: '0.05em' }}>STRATEGIC VALUE</div>
                   <p style={{ fontSize: '14px', color: 'var(--slate-300)', margin: 0, lineHeight: 1.6 }}>
-                    Connect with me directly on <strong>LinkedIn</strong> or <strong>WhatsApp</strong> to receive a <strong style={{ color: 'var(--white)' }}>Free India Market Audit Report</strong> tailored to your company.
+                    Connect with me directly on <strong>LinkedIn</strong> or <strong>WhatsApp</strong> to receive an <strong style={{ color: 'var(--white)' }}>Initial India Market Audit Report</strong> tailored to your company.
                   </p>
                 </div>
                 

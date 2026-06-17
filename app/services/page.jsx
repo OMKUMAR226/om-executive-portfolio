@@ -78,10 +78,10 @@ const SERVICES = [
   },
   {
     icon: Search,
-    title: 'Free Uncensored India Market Audit.',
+    title: 'Initial Uncensored India Market Audit.',
     tag: 'MARKET OPPORTUNITY BRIEF',
     badge: { val: '1.47 BILLION MARKET', color: 'sky' },
-    body: 'A free audit for any company considering India. I provide an uncensored market opportunity brief with TAM analysis. India has 1.47 billion people. Capturing even 0.01% means steady recurring income.',
+    body: 'An initial audit for any company considering India. I provide an uncensored market opportunity brief with TAM analysis. India has 1.47 billion people. Capturing even 0.01% means steady recurring income.',
     who: 'Companies exploring the Indian market with zero risk.',
     result: 'Clarity on whether India is right for your product.',
   },

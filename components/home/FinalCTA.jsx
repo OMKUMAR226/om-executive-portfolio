@@ -93,8 +93,8 @@ export default function FinalCTA() {
 
             {/* CTAs */}
             <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center' }}>
-              <MagneticButton href="/contact" variant="primary" id="final-book-call">
-                Book a 20-Min Call — It&apos;s Free
+              <MagneticButton href="/contact" variant="primary" style={{ padding: '16px 36px', fontSize: '16px' }} id="final-book-call">
+                Book a 20-Min Discovery Call
               </MagneticButton>
               <MagneticButton
                 href="mailto:salesverse.connect@gmail.com"

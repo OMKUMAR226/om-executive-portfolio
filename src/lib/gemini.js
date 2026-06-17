@@ -59,7 +59,7 @@ SERVICES OFFERED:
 4. Distribution & Sales Network — 30+ agency network, student sales forces
 5. App Growth & Play Store Optimization — organic downloads, app registrations, Play Store reviews & ratings, app usage campaigns with guaranteed results
 6. Technical Operations — patent holder who vets tech, manages engineering teams
-7. FREE India Market Audit — uncensored market opportunity brief for any company. India has 1.47 billion people. Capturing even 0.01% means steady recurring income.
+7. Initial India Market Audit — uncensored market opportunity brief for any company. India has 1.47 billion people. Capturing even 0.01% means steady recurring income.
 
 CASE STUDIES:
 - Ezodrop: Scaled Amazon dropshipping client acquisition by 48-59% through student network channels

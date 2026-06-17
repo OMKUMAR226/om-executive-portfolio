@@ -164,12 +164,12 @@ export const SERVICES = [
     deliverables: ['Organic Downloads', 'Registration Drives', 'Store Optimization', 'Usage Campaigns'],
   },
   {
-    id: 'free-audit',
+    id: 'initial-audit',
     icon: '🔍',
-    title: 'Free India Market Audit',
-    headline: 'Uncensored Market Opportunity Brief',
-    description: 'A free audit for any company considering India. I provide an uncensored market opportunity brief with TAM analysis. India has 1.47 billion people. Capturing even 0.01% means steady recurring income.',
-    deliverables: ['TAM Analysis', 'Competitor Landscape', 'Regulatory Overview', 'GTM Strategy'],
+    title: 'Initial India Market Audit',
+    headline: 'Uncensored Truth.',
+    description: 'An initial audit for any company considering India. I provide an uncensored market opportunity brief with TAM analysis. India has 1.47 billion people. Capturing even 0.01% means steady recurring income.',
+    deliverables: ['Market Entry Playbook', 'TAM & Competition Analysis', 'Regulatory Red Flags', 'Local Vendor Costs'],
   },
   {
     id: 'tech-ops',
