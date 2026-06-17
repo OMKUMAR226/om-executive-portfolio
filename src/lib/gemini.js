@@ -123,7 +123,7 @@ export async function callGemini(userMessage, conversationHistory = []) {
     .map((m) => `${m.role === 'user' ? 'User' : 'OKG AI'}: ${m.content}`)
     .join('\n')}\n\nUser: ${userMessage}\n\nOKG AI:`;
 
-  const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
+  const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent?key=${apiKey}`;
 
   const response = await fetch(endpoint, {
     method: 'POST',
