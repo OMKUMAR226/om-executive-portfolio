@@ -24,33 +24,6 @@ export default function AchievementsPage() {
         </div>
       </section>
 
-      {/* Financial Impact */}
-      <section style={{ padding: '0 32px 80px' }}>
-        <div className="container" style={{ maxWidth: '1000px', margin: '0 auto' }}>
-          <h2 style={{ fontSize: '24px', color: 'var(--white)', marginBottom: '32px', borderBottom: '1px solid rgba(56,189,248,0.1)', paddingBottom: '16px' }}>Financial Impact Summary</h2>
-          
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px' }} className="stats-grid">
-            <GlassCard variant="gold" style={{ padding: '32px', textAlign: 'center' }}>
-              <div style={{ fontSize: '12px', color: 'var(--gold)', fontFamily: "'JetBrains Mono', monospace", marginBottom: '16px' }}>TOTAL BUDGET MANAGED</div>
-              <MoneyBadge value="$8,100+ (₹6.7L+)" size="xl" color="gold" style={{ background: 'transparent', border: 'none', boxShadow: 'none', padding: 0 }} />
-              <div style={{ fontSize: '14px', color: 'var(--slate-400)', marginTop: '8px' }}>(₹6.77L+ ($8,100+))</div>
-            </GlassCard>
-
-            <GlassCard style={{ padding: '32px', textAlign: 'center' }}>
-              <div style={{ fontSize: '12px', color: 'var(--sky)', fontFamily: "'JetBrains Mono', monospace", marginBottom: '16px' }}>REVENUE GENERATED</div>
-              <MoneyBadge value="$7,200+ (₹6L+)" size="xl" color="sky" style={{ background: 'transparent', border: 'none', boxShadow: 'none', padding: 0 }} />
-              <div style={{ fontSize: '14px', color: 'var(--slate-400)', marginTop: '8px' }}>Across 4 national events</div>
-            </GlassCard>
-
-            <GlassCard style={{ padding: '32px', textAlign: 'center' }}>
-              <div style={{ fontSize: '12px', color: 'var(--gold)', fontFamily: "'JetBrains Mono', monospace", marginBottom: '16px' }}>DEVELOPER PRIZES SECURED</div>
-              <MoneyBadge value="$4,100+ (₹3.4L+)" size="xl" color="gold" style={{ background: 'transparent', border: 'none', boxShadow: 'none', padding: 0 }} />
-              <div style={{ fontSize: '14px', color: 'var(--slate-400)', marginTop: '8px' }}>Distributed to ecosystem</div>
-            </GlassCard>
-          </div>
-        </div>
-      </section>
-
       {/* Technical Depth */}
       <section style={{ padding: '0 32px 80px' }}>
         <div className="container" style={{ maxWidth: '1000px', margin: '0 auto' }}>
@@ -81,10 +54,6 @@ export default function AchievementsPage() {
                 <h4 style={{ fontSize: '18px', color: 'var(--white)', margin: 0, lineHeight: 1.4 }}>
                   AI-Enforced Construction Safety Compliance System: Real-Time Hazard and PPE Monitoring using YOLOv8 and Deep Learning
                 </h4>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                  <span style={{ fontSize: '14px', color: 'var(--slate-400)' }}>Registration Fee:</span>
-                  <MoneyBadge value="₹10,620 ($127)" size="sm" color="gold" />
-                </div>
               </GlassCard>
 
               {/* Springer */}
