@@ -182,14 +182,13 @@ export default function ContactPage() {
                   </div>
 
                   <div className="form-group">
-                    <label>Estimated Monthly Budget (Optional)</label>
+                    <label>Strategic Commitment Level (Optional)</label>
                     <select name="budget" value={formData.budget} onChange={handleChange}>
                       <option value="">Select an option...</option>
-                      <option value="<$2k">Under $2,000 USD / month</option>
-                      <option value="$2k-$5k">$2,000 - $5,000 USD / month</option>
-                      <option value="$5k-$10k">$5,000 - $10,000 USD / month</option>
-                      <option value="$10k+">$10,000+ USD / month</option>
-                      <option value="Equity/RevShare">Performance / Equity / Rev-Share</option>
+                      <option value="pilot">Pilot & Validate ($1,000 - $3,000 / mo)</option>
+                      <option value="growth">Scaling & Growth ($3,000 - $7,000 / mo)</option>
+                      <option value="aggressive">Aggressive Market Capture ($7,000 - $15,000+ / mo)</option>
+                      <option value="performance">Strategic Partner (Performance / Rev-Share)</option>
                     </select>
                   </div>
 
