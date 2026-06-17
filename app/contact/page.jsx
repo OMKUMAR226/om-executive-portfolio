@@ -2,6 +2,24 @@
 
 import { useState } from 'react';
 import { Mail, MessageCircle, ArrowRight, Loader2, Send } from 'lucide-react';
+
+const Linkedin = ({ size = 24, color = "currentColor" }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke={color}
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+    <rect width="4" height="12" x="2" y="9" />
+    <circle cx="4" cy="4" r="2" />
+  </svg>
+);
 import GlassCard from '@/components/shared/GlassCard';
 import AnimatedHeading from '@/components/shared/AnimatedHeading';
 import SectionLabel from '@/components/shared/SectionLabel';
@@ -68,16 +86,23 @@ export default function ContactPage() {
             {/* Left: Direct Contact Info */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
               <GlassCard variant="gold" style={{ padding: '40px' }}>
-                <h3 style={{ fontSize: '20px', color: 'var(--white)', marginBottom: '32px' }}>Direct Lines</h3>
+                <h3 style={{ fontSize: '20px', color: 'var(--white)', marginBottom: '24px' }}>Direct Lines</h3>
+                
+                <div style={{ padding: '16px', background: 'rgba(245,158,11,0.08)', border: '1px solid rgba(245,158,11,0.2)', borderRadius: '12px', marginBottom: '32px' }}>
+                  <div style={{ fontSize: '12px', color: 'var(--gold)', fontFamily: "'JetBrains Mono', monospace", marginBottom: '8px', letterSpacing: '0.05em' }}>COMPLIMENTARY VALUE</div>
+                  <p style={{ fontSize: '14px', color: 'var(--slate-300)', margin: 0, lineHeight: 1.6 }}>
+                    Connect with me directly on <strong>LinkedIn</strong> or <strong>WhatsApp</strong> to receive a <strong style={{ color: 'var(--white)' }}>Free India Market Audit Report</strong> tailored to your company.
+                  </p>
+                </div>
                 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
-                  <a href="mailto:salesverse.connect@gmail.com" style={{ display: 'flex', alignItems: 'center', gap: '16px', textDecoration: 'none', color: 'inherit' }} className="contact-link">
-                    <div style={{ width: '48px', height: '48px', borderRadius: '12px', background: 'rgba(56,189,248,0.08)', border: '1px solid rgba(56,189,248,0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                      <Mail size={20} color="var(--sky)" />
+                  <a href="https://linkedin.com/in/kumarom266" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '16px', textDecoration: 'none', color: 'inherit' }} className="contact-link">
+                    <div style={{ width: '48px', height: '48px', borderRadius: '12px', background: 'rgba(14,165,233,0.08)', border: '1px solid rgba(14,165,233,0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                      <Linkedin size={20} color="var(--sky)" />
                     </div>
                     <div>
-                      <div style={{ fontSize: '12px', color: 'var(--slate-400)', fontFamily: "'JetBrains Mono', monospace", marginBottom: '4px' }}>EMAIL</div>
-                      <div style={{ fontSize: '15px', color: 'var(--white)', fontWeight: 500 }}>salesverse.connect@gmail.com</div>
+                      <div style={{ fontSize: '12px', color: 'var(--slate-400)', fontFamily: "'JetBrains Mono', monospace", marginBottom: '4px' }}>LINKEDIN (Recommended)</div>
+                      <div style={{ fontSize: '15px', color: 'var(--white)', fontWeight: 500 }}>linkedin.com/in/kumarom266</div>
                     </div>
                   </a>
 
@@ -88,6 +113,16 @@ export default function ContactPage() {
                     <div>
                       <div style={{ fontSize: '12px', color: 'var(--slate-400)', fontFamily: "'JetBrains Mono', monospace", marginBottom: '4px' }}>WHATSAPP (Fastest)</div>
                       <div style={{ fontSize: '15px', color: 'var(--white)', fontWeight: 500 }}>+91 83052 61866</div>
+                    </div>
+                  </a>
+
+                  <a href="mailto:salesverse.connect@gmail.com" style={{ display: 'flex', alignItems: 'center', gap: '16px', textDecoration: 'none', color: 'inherit' }} className="contact-link">
+                    <div style={{ width: '48px', height: '48px', borderRadius: '12px', background: 'rgba(14,165,233,0.08)', border: '1px solid rgba(14,165,233,0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                      <Mail size={20} color="var(--sky)" />
+                    </div>
+                    <div>
+                      <div style={{ fontSize: '12px', color: 'var(--slate-400)', fontFamily: "'JetBrains Mono', monospace", marginBottom: '4px' }}>EMAIL</div>
+                      <div style={{ fontSize: '15px', color: 'var(--white)', fontWeight: 500 }}>salesverse.connect@gmail.com</div>
                     </div>
                   </a>
                 </div>
