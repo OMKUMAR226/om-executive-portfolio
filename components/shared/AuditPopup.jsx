@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, MessageCircle } from 'lucide-react';
+import { X, MessageCircle, Sparkles } from 'lucide-react';
 import { PERSONAL } from '@/src/lib/constants';
 
 const LinkedinIcon = ({ size = 24, color = "currentColor" }) => (
@@ -24,14 +24,16 @@ const LinkedinIcon = ({ size = 24, color = "currentColor" }) => (
 );
 
 export default function AuditPopup() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    // Show popup after 1.5 seconds
+    setMounted(true);
+    // Expand popup after 1.5 seconds if they haven't explicitly closed it before
     const timer = setTimeout(() => {
       const isClosed = sessionStorage.getItem('auditPopupClosed');
       if (!isClosed) {
-        setIsOpen(true);
+        setIsExpanded(true);
       }
     }, 1500);
     return () => clearTimeout(timer);
@@ -39,24 +41,67 @@ export default function AuditPopup() {
 
   const handleClose = () => {
     sessionStorage.setItem('auditPopupClosed', 'true');
-    setIsOpen(false);
+    setIsExpanded(false);
   };
+
+  const handleOpen = () => {
+    setIsExpanded(true);
+  };
+
+  if (!mounted) return null;
 
   return (
     <AnimatePresence>
-      {isOpen && (
-        <div style={{
-          position: 'fixed',
-          bottom: '100px', // Just above the chatbot toggle
-          right: '24px',
-          zIndex: 200,
-          display: 'flex',
-          flexDirection: 'column'
-        }}>
+      {!isExpanded ? (
+        <motion.button
+          key="collapsed-widget"
+          onClick={handleOpen}
+          initial={{ opacity: 0, scale: 0.8, y: 20 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          exit={{ opacity: 0, scale: 0.8, y: 20 }}
+          transition={{ duration: 0.3 }}
+          style={{
+            position: 'fixed',
+            bottom: '24px',
+            left: '24px',
+            zIndex: 200,
+            background: 'linear-gradient(135deg, var(--gold), #fbbf24)',
+            color: '#000',
+            border: 'none',
+            borderRadius: '100px',
+            padding: '12px 24px',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '8px',
+            cursor: 'pointer',
+            boxShadow: '0 4px 20px rgba(245, 158, 11, 0.4), 0 0 40px rgba(245, 158, 11, 0.2)',
+            fontWeight: 700,
+            fontSize: '13px',
+            fontFamily: "'Space Grotesk', sans-serif",
+            letterSpacing: '0.05em'
+          }}
+          whileHover={{ scale: 1.05, boxShadow: '0 8px 25px rgba(245, 158, 11, 0.5), 0 0 50px rgba(245, 158, 11, 0.3)' }}
+          whileTap={{ scale: 0.95 }}
+        >
+          <Sparkles size={16} fill="#000" />
+          FOUNDER'S OFFER
+        </motion.button>
+      ) : (
+        <div 
+          key="expanded-popup"
+          style={{
+            position: 'fixed',
+            bottom: '24px',
+            left: '24px',
+            zIndex: 200,
+            display: 'flex',
+            flexDirection: 'column'
+          }}
+        >
           <motion.div
-            initial={{ opacity: 0, scale: 0.8, x: 20, y: 20 }}
+            initial={{ opacity: 0, scale: 0.8, x: -20, y: 20 }}
             animate={{ opacity: 1, scale: 1, x: 0, y: 0 }}
-            exit={{ opacity: 0, scale: 0.8, x: 20, y: 20 }}
+            exit={{ opacity: 0, scale: 0.8, x: -20, y: 20 }}
             transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
             style={{
               background: 'rgba(15, 23, 42, 0.95)',
