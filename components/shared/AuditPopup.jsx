@@ -62,28 +62,28 @@ export default function AuditPopup() {
           transition={{ duration: 0.3 }}
           style={{
             position: 'fixed',
-            bottom: '24px',
-            left: '24px',
+            bottom: '16px',
+            left: '16px',
             zIndex: 200,
             background: 'linear-gradient(135deg, var(--gold), #fbbf24)',
             color: '#000',
             border: 'none',
             borderRadius: '100px',
-            padding: '12px 24px',
+            padding: '8px 16px',
             display: 'flex',
             alignItems: 'center',
-            gap: '8px',
+            gap: '6px',
             cursor: 'pointer',
-            boxShadow: '0 4px 20px rgba(245, 158, 11, 0.4), 0 0 40px rgba(245, 158, 11, 0.2)',
+            boxShadow: '0 4px 15px rgba(245, 158, 11, 0.3), 0 0 30px rgba(245, 158, 11, 0.15)',
             fontWeight: 700,
-            fontSize: '13px',
+            fontSize: '11px',
             fontFamily: "'Space Grotesk', sans-serif",
             letterSpacing: '0.05em'
           }}
-          whileHover={{ scale: 1.05, boxShadow: '0 8px 25px rgba(245, 158, 11, 0.5), 0 0 50px rgba(245, 158, 11, 0.3)' }}
+          whileHover={{ scale: 1.05, boxShadow: '0 6px 20px rgba(245, 158, 11, 0.4), 0 0 40px rgba(245, 158, 11, 0.2)' }}
           whileTap={{ scale: 0.95 }}
         >
-          <Sparkles size={16} fill="#000" />
+          <Sparkles size={14} fill="#000" />
           STRATEGIC OFFER
         </motion.button>
       ) : (
@@ -91,8 +91,8 @@ export default function AuditPopup() {
           key="expanded-popup"
           style={{
             position: 'fixed',
-            bottom: '24px',
-            left: '24px',
+            bottom: '16px',
+            left: '16px',
             zIndex: 200,
             display: 'flex',
             flexDirection: 'column'

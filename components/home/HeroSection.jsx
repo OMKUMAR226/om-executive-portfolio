@@ -117,12 +117,14 @@ export default function HeroSection() {
 
             {/* H1 — Pain-first */}
             <div className="hero-reveal">
-              <h1 style={{ fontSize: 'clamp(40px, 5.5vw, 76px)', lineHeight: 1.05, margin: 0 }}>
-                <span style={{ display: 'block', color: 'var(--white)' }}>Most Founders</span>
-                <span style={{ display: 'block', color: 'var(--red-pain)', fontWeight: 800, fontSize: 'clamp(44px, 6vw, 82px)' }}>Burn 6–12 Months</span>
+              <h1 style={{ fontSize: 'clamp(32px, 4.5vw, 64px)', lineHeight: 1.1, margin: 0 }}>
+                <span style={{ display: 'block', color: 'var(--white)' }}>
+                  Most Founders <span style={{ color: 'var(--red-pain)', fontWeight: 800, fontSize: 'clamp(36px, 5vw, 70px)' }}>Burn 6–12 Months</span>
+                </span>
                 <span style={{ display: 'block', color: 'var(--white)' }}>Figuring Out Execution.</span>
-                <span style={{ display: 'block', color: 'var(--white)' }}>I Provide The Ultimate</span>
-                <span style={{ display: 'block', color: 'var(--gold)' }}>End-to-End Ecosystem.</span>
+                <span style={{ display: 'block', color: 'var(--white)' }}>
+                  I Provide The Ultimate <span style={{ color: 'var(--gold)' }}>End-to-End Ecosystem.</span>
+                </span>
               </h1>
             </div>
 
@@ -162,26 +164,6 @@ export default function HeroSection() {
               </div>
             </div>
 
-            {/* Value stack */}
-            <div className="hero-reveal" style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-              {VALUE_STACK.map((line, i) => (
-                <div
-                  key={i}
-                  style={{
-                    display: 'flex',
-                    alignItems: 'flex-start',
-                    gap: '10px',
-                    fontFamily: "'JetBrains Mono', monospace",
-                    fontSize: '13px',
-                    color: 'var(--slate-300)',
-                  }}
-                >
-                  <span style={{ color: 'var(--sky)', flexShrink: 0, marginTop: '1px' }}>→</span>
-                  <span>{line}</span>
-                </div>
-              ))}
-            </div>
-
             {/* CTA Buttons */}
             <div className="hero-reveal" style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
               <MagneticButton href="/contact" variant="primary" id="hero-book-call">
@@ -199,7 +181,7 @@ export default function HeroSection() {
           <div className="hero-reveal" style={{ display: 'flex', justifyContent: 'center' }}>
             <div
               className="animated-border-card"
-              style={{ width: '100%', maxWidth: '380px' }}
+              style={{ width: '100%', maxWidth: '380px', marginTop: '-100px' }}
             >
               <div
                 className="animated-border-inner"
@@ -284,9 +266,8 @@ export default function HeroSection() {
                 {/* Info rows */}
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', borderTop: '1px solid rgba(56,189,248,0.1)', paddingTop: '20px' }}>
                   {[
-                    { icon: '🎓', text: 'VIT Pune — B.Tech CS & AI · 2027' },
+                    { icon: '🛡️', text: 'Risk-Mitigated Operations & Scaling' },
                     { icon: '🌐', text: 'India Market Lead' },
-                    { icon: '🔗', text: '6,000+ Dev Pipeline & 30+ Mature Agencies' },
                     { icon: '🔬', text: 'Inventor — Patent Filed in India' },
                     { icon: '📚', text: '2 Scopus/Springer Publications' },
                   ].map((row, i) => (
@@ -307,30 +288,7 @@ export default function HeroSection() {
                   ))}
                 </div>
 
-                {/* Bottom MoneyBadges */}
-                <div style={{
-                  display: 'flex', gap: '12px', flexWrap: 'wrap', justifyContent: 'center',
-                  borderTop: '1px solid rgba(56,189,248,0.1)', paddingTop: '20px',
-                }}>
-                  <div style={{ textAlign: 'center' }}>
-                    <MoneyBadge value="6,000+" size="md" color="sky" />
-                    <div style={{ fontFamily: "'Inter', sans-serif", fontSize: '10px', color: 'var(--slate-400)', marginTop: '4px', textTransform: 'uppercase', letterSpacing: '1px' }}>
-                      Dev Pipeline
-                    </div>
-                  </div>
-                  <div style={{ textAlign: 'center' }}>
-                    <MoneyBadge value="30+" size="md" color="gold" />
-                    <div style={{ fontFamily: "'Inter', sans-serif", fontSize: '10px', color: 'var(--slate-400)', marginTop: '4px', textTransform: 'uppercase', letterSpacing: '1px' }}>
-                      Agencies
-                    </div>
-                  </div>
-                  <div style={{ textAlign: 'center' }}>
-                    <MoneyBadge value="Govt. Patent" size="md" color="emerald" />
-                    <div style={{ fontFamily: "'Inter', sans-serif", fontSize: '10px', color: 'var(--slate-400)', marginTop: '4px', textTransform: 'uppercase', letterSpacing: '1px' }}>
-                      WallBreach Filed
-                    </div>
-                  </div>
-                </div>
+
               </div>
             </div>
           </div>

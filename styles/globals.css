@@ -427,12 +427,13 @@ p {
   padding: 2px;
   background: conic-gradient(
     from var(--border-angle),
-    rgba(245, 158, 11, 0.6) 0deg,
-    rgba(245, 158, 11, 0.2) 120deg,
-    rgba(245, 158, 11, 0.4) 240deg,
-    rgba(245, 158, 11, 0.6) 360deg
+    rgba(245, 158, 11, 0.8) 0deg,
+    rgba(245, 158, 11, 0.1) 120deg,
+    rgba(14, 165, 233, 0.5) 240deg,
+    rgba(245, 158, 11, 0.8) 360deg
   );
-  animation: rotateBorder 8s linear infinite;
+  animation: rotateBorder 6s linear infinite;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(245, 158, 11, 0.1);
 }
 
 @keyframes rotateBorder {
@@ -440,10 +441,12 @@ p {
 }
 
 .animated-border-inner {
-  background: var(--navy-800);
+  background: linear-gradient(135deg, rgba(23, 23, 23, 0.9), rgba(10, 10, 10, 0.95));
+  backdrop-filter: blur(16px);
   border-radius: 18px;
   width: 100%;
   height: 100%;
+  box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.02);
 }
 
 /* ============================================================
