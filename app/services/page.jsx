@@ -7,7 +7,7 @@ import MagneticButton from '@/components/shared/MagneticButton';
 
 export const metadata = {
   title: 'Services | Nine Capabilities. One Operator. Day 1.',
-  description: 'India Market Entry Architecture, 30+ Agencies, 6,000+ Developers, Full Stack Dev, and GTM Strategy. One person. One conversation.',
+  description: 'India Market Entry Architecture, 30+ Agencies, 6,000+ Developers, Full Stack Dev, and GTM Strategy. MSME Certified Enterprise. One person. One conversation.',
 };
 
 const SERVICES = [
@@ -57,7 +57,8 @@ const SERVICES = [
     icon: Building2,
     title: 'End-to-End. From Registration to Revenue.',
     tag: 'BUSINESS SETUP & OPERATIONS',
-    body: 'Complete Indian business setup — entity registration, banking, compliance, team recruitment, vendor sourcing, operational process design. I\'ve embedded directly into startups to overhaul their entire operational structure prior to funding rounds.',
+    badge: { val: 'MSME CERTIFIED', color: 'gold' },
+    body: 'Complete Indian business setup — entity registration, banking, compliance, team recruitment, vendor sourcing, operational process design. I\'ve embedded directly into startups to overhaul their entire operational structure prior to funding rounds. My own enterprise ORBYT is a Government of India MSME registered entity.',
     result: 'A running operation — not a compliance checklist.',
   },
   {

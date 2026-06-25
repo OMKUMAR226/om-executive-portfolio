@@ -15,7 +15,7 @@ export const metadata = {
     template: '%s | Om Kumar Garg',
   },
   description:
-    '30+ agencies. 6,000+ developers. $8,100+ events managed. Om Kumar Garg is India\'s most deployable embedded operations partner for foreign companies. Open to select partnerships.',
+    '30+ agencies. 6,000+ developers. $8,100+ events managed. MSME Certified Enterprise. Om Kumar Garg is India\'s most deployable embedded operations partner for foreign companies. Open to select partnerships.',
   keywords: [
     'India market entry', 'India operations lead', 'ecosystem architect',
     'co-founder India', 'VIT Pune', 'remote India partner', 'full stack developer India',
@@ -23,7 +23,7 @@ export const metadata = {
   ],
   openGraph: {
     title: "Om Kumar Garg — India's Embedded Operations Partner",
-    description: 'One person. 30+ agencies. 6,000+ developers. $8,100+ managed. Your India infrastructure from Day 1.',
+    description: 'One person. 30+ agencies. 6,000+ developers. $8,100+ managed. MSME Certified. Your India infrastructure from Day 1.',
     url: 'https://om-executive-portfolio.vercel.app',
     siteName: 'Om Kumar Garg',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Om Kumar Garg — India Operations Lead' }],

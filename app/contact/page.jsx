@@ -135,6 +135,7 @@ export default function ContactPage() {
                   <li>Remote-first alignment.</li>
                   <li>US, AUS, UAE, NZ, UK time zones accommodated.</li>
                   <li>Standard response time: <span style={{ color: 'var(--white)', fontWeight: 600 }}>&lt; 24 hours</span>.</li>
+                  <li><span style={{ color: 'var(--emerald)', fontWeight: 600 }}>MSME Registered Enterprise</span> — Govt. of India verified.</li>
                 </ul>
               </GlassCard>
             </div>

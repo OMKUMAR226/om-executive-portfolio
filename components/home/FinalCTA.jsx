@@ -8,6 +8,7 @@ const ENGAGEMENT_PILLS = [
   'Chief of Staff',
   'Venture Studio Partner',
   'Community Architect',
+  'MSME Registered',
 ];
 
 export default function FinalCTA() {
@@ -89,6 +90,7 @@ export default function FinalCTA() {
               <MoneyBadge value="$8,100+ (₹6.7L+)" size="md" color="gold" />
               <MoneyBadge value="30+ AGENCIES" size="md" color="sky" />
               <MoneyBadge value="6,000+ DEVELOPERS" size="md" color="sky" />
+              <MoneyBadge value="MSME CERTIFIED" size="md" color="gold" />
             </div>
 
             {/* CTAs */}

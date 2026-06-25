@@ -27,6 +27,7 @@ const NAV_LINKS = [
   { label: 'Services', href: '/services' },
   { label: 'Case Studies', href: '/case-studies' },
   { label: 'Achievements', href: '/achievements' },
+  { label: 'MSME', href: '/msme' },
   { label: 'Contact', href: '/contact' },
 ];
 
@@ -88,7 +89,7 @@ export default function Footer() {
               marginBottom: '20px',
             }}
           >
-            India Market Lead · Ecosystem Architect · Operations Partner
+            India Market Lead · Ecosystem Architect · MSME Certified Enterprise
           </p>
           <div style={{ display: 'flex', gap: '12px' }}>
             <a
@@ -235,7 +236,7 @@ export default function Footer() {
             color: 'var(--slate-400)',
           }}
         >
-          Remote-First · India-Native · Globally Deployable
+          Remote-First · India-Native · MSME Registered · Globally Deployable
         </span>
       </div>
 
