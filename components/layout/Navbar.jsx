@@ -12,6 +12,7 @@ const NAV_LINKS = [
   { label: 'Services', href: '/services' },
   { label: 'Case Studies', href: '/case-studies' },
   { label: 'Achievements', href: '/achievements' },
+  { label: 'MSME', href: '/msme' },
   { label: 'Contact', href: '/contact' },
 ];
 

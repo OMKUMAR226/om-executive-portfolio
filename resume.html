@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Om Kumar Garg — Resume</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10.5pt;
+    color: #111827;
+    background: #ffffff;
+    line-height: 1.35;
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    padding: 10mm 16mm 10mm 16mm;
+  }
+
+  /* ─── HEADER ─── */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 5px;
+    gap: 16px;
+  }
+
+  .header-left {
+    flex: 1;
+  }
+
+  .name {
+    font-size: 26pt;
+    font-weight: 700;
+    color: #0F172A;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+    margin-bottom: 3px;
+  }
+
+  .tagline {
+    font-size: 10pt;
+    color: #2563EB;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    margin-bottom: 7px;
+    text-transform: uppercase;
+  }
+
+  .contact-row {
+    font-size: 9pt;
+    color: #374151;
+    line-height: 1.7;
+  }
+
+  .contact-row a {
+    color: #374151;
+    text-decoration: none;
+  }
+
+  .contact-sep {
+    color: #9CA3AF;
+    margin: 0 5px;
+  }
+
+  /* Photo circle */
+  .photo-wrap {
+    flex-shrink: 0;
+    width: 82px;
+    height: 82px;
+  }
+
+  .photo-wrap img {
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #2563EB;
+  }
+
+  .photo-placeholder {
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    background: #EFF6FF;
+    border: 3px solid #2563EB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7.5pt;
+    color: #2563EB;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  /* Accent divider */
+  .header-rule {
+    height: 3px;
+    background: linear-gradient(90deg, #2563EB 0%, #93C5FD 60%, #EFF6FF 100%);
+    margin-bottom: 12px;
+    border-radius: 2px;
+  }
+
+  /* ─── SECTIONS ─── */
+  .section {
+    margin-bottom: 7px;
+  }
+
+  .section-title {
+    font-size: 8.5pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #0F172A;
+    border-left: 3px solid #2563EB;
+    padding-left: 7px;
+    margin-bottom: 7px;
+  }
+
+  /* ─── SUMMARY ─── */
+  .summary-text {
+    font-size: 10pt;
+    color: #1F2937;
+    line-height: 1.55;
+    background: #F8FAFF;
+    border-left: 3px solid #BFDBFE;
+    padding: 8px 11px;
+    border-radius: 0 4px 4px 0;
+  }
+
+  /* ─── EXPERIENCE ─── */
+  .job {
+    margin-bottom: 5px;
+  }
+
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1px;
+  }
+
+  .job-title {
+    font-size: 10.5pt;
+    font-weight: 700;
+    color: #0F172A;
+  }
+
+  .job-date {
+    font-size: 9pt;
+    color: #6B7280;
+    font-style: italic;
+    white-space: nowrap;
+    margin-left: 8px;
+  }
+
+  .job-company {
+    font-size: 9.5pt;
+    color: #2563EB;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  .job ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .job ul li {
+    font-size: 10pt;
+    color: #1F2937;
+    line-height: 1.35;
+    padding-left: 14px;
+    position: relative;
+    margin-bottom: 2px;
+  }
+
+  .job ul li::before {
+    content: "›";
+    position: absolute;
+    left: 0;
+    color: #2563EB;
+    font-weight: 700;
+    font-size: 12pt;
+    line-height: 1.2;
+  }
+
+  /* ─── EDUCATION ─── */
+  .edu-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .edu-degree {
+    font-size: 10.5pt;
+    font-weight: 700;
+    color: #0F172A;
+  }
+
+  .edu-year {
+    font-size: 9pt;
+    color: #6B7280;
+    font-style: italic;
+  }
+
+  .edu-school {
+    font-size: 9.5pt;
+    color: #2563EB;
+    font-weight: 600;
+    margin-top: 1px;
+  }
+
+  /* ─── SKILLS ─── */
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .skill-tag {
+    font-size: 9pt;
+    color: #1E3A5F;
+    background: #EFF6FF;
+    border: 1px solid #BFDBFE;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  /* ─── ACHIEVEMENTS ─── */
+  .achieve-list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+
+  .achieve-list li {
+    font-size: 10pt;
+    color: #1F2937;
+    padding-left: 14px;
+    position: relative;
+    line-height: 1.35;
+  }
+
+  .achieve-list li::before {
+    content: "›";
+    position: absolute;
+    left: 0;
+    color: #2563EB;
+    font-weight: 700;
+    font-size: 12pt;
+    line-height: 1.2;
+  }
+
+  /* ─── PRINT ─── */
+  @media print {
+    .page { margin: 0; padding: 10mm 16mm; }
+    .print-btn { display: none !important; }
+    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+
+  .print-btn {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    background: #2563EB;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(37,99,235,0.3);
+    z-index: 999;
+  }
+</style>
+</head>
+<body>
+
+<button class="print-btn" onclick="window.print()">Export PDF</button>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <div class="name">Om Kumar Garg</div>
+      <div class="tagline">Growth Operator &amp; Ecosystem Builder &nbsp;·&nbsp; Remote-First</div>
+      <div class="contact-row">
+        salesverse.connect@gmail.com
+        <span class="contact-sep">|</span>
+        +91 83052 61866
+        <span class="contact-sep">|</span>
+        Pune, India
+        <br>
+        linkedin.com/in/kumarom266
+        <span class="contact-sep">|</span>
+        om-executive-portfolio.vercel.app
+        <span class="contact-sep">|</span>
+        github.com/OMKUMAR226
+      </div>
+    </div>
+    <img src="profile_photo.jpeg" alt="Om Kumar Garg" style="width:82px;height:82px;border-radius:50%;object-fit:cover;border:3px solid #2563EB;">
+  </div>
+
+  <div class="header-rule"></div>
+
+  <!-- SUMMARY -->
+  <div class="section">
+    <div class="section-title">Professional Summary</div>
+    <div class="summary-text">
+      Execution-first growth operator building at national scale while completing CS-AI at VIT Pune (2027). Grew a 6,000-member
+      ecosystem with ₹0 in paid ads, managed $8,100+ in event budgets with 30–40% surplus on every run, and closed B2B
+      partnerships with 30+ agencies through direct outreach — no shortcuts. IBM certified. Patent filed. I don't wait for
+      playbooks — I find the gap, build the system, and ship the result. Available immediately for remote roles in Growth,
+      Business Development, Operations, and Chief of Staff.
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Experience</div>
+
+    <div class="job">
+      <div class="job-header">
+        <div class="job-title">Founder &amp; Operations Lead</div>
+        <div class="job-date">Jan 2024 – Present</div>
+      </div>
+      <div class="job-company">SalesVerse</div>
+      <ul>
+        <li>Architected zero-cost B2B acquisition engine for MyBizPartner — 35–40% commission structure, 6-stage pipeline, scaled to national distribution with ₹0 upfront investment</li>
+        <li>Designed pan-India EV distribution network for J_Kaur EV achieving 40% gross margin per vehicle, ₹0 inventory held, replicable to all Indian cities</li>
+        <li>Drove 48–59% client acquisition growth for Ezodrop (Amazon eCommerce operator) through organic community channels and targeted outreach</li>
+        <li>Manage 30+ agency partnerships across development, growth, CRM, and creative verticals; deployed ground-level survey campaigns for product validation across Indian demographics</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <div class="job-title">President</div>
+        <div class="job-date">Jul 2025 – May 2026</div>
+      </div>
+      <div class="job-company">AISF — AI Student Federation (Pune / AIDN)</div>
+      <ul>
+        <li>Scaled AISF from zero to 6,000+ members across 13+ communities with ₹0 in paid advertising — entirely through organic outreach, content, and community strategy</li>
+        <li>Organized and delivered 4 national 24-hour hackathons totaling $8,100+ (₹6.77L+) in budgets, achieving 30–40% surplus on every single event</li>
+        <li>Distributed $4,100+ in developer prizes; built pan-India campus activation and beta testing pipeline adopted by 5+ partner startups for app launches</li>
+        <li>Established C-suite sponsorship relationships and coordinated 30+ vetted agencies for end-to-end event operations</li>
+        <li>Engineered structured GTM validation pipeline used by 3+ early-stage companies for user acquisition campaigns and product feedback loops</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section">
+    <div class="section-title">Education</div>
+    <div class="edu-row">
+      <div class="edu-degree">B.Eng — Computer Science, Artificial Intelligence</div>
+      <div class="edu-year">Expected 2027</div>
+    </div>
+    <div class="edu-school">Vishwakarma Institute of Technology (VIT Pune) &nbsp;·&nbsp; NIT Kurukshetra (Coursework)</div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section">
+    <div class="section-title">Skills</div>
+    <div class="skills-grid">
+      <span class="skill-tag">Growth Hacking</span>
+      <span class="skill-tag">User Acquisition</span>
+      <span class="skill-tag">Business Development</span>
+      <span class="skill-tag">Community Building</span>
+      <span class="skill-tag">B2B Sales</span>
+      <span class="skill-tag">Cold Outreach</span>
+      <span class="skill-tag">GTM Strategy</span>
+      <span class="skill-tag">Organic Marketing</span>
+      <span class="skill-tag">Operations Management</span>
+      <span class="skill-tag">Partnership Development</span>
+      <span class="skill-tag">Market Research</span>
+      <span class="skill-tag">Event Management</span>
+      <span class="skill-tag">Budget Management</span>
+      <span class="skill-tag">Project Management</span>
+      <span class="skill-tag">Full Stack Development</span>
+      <span class="skill-tag">React</span>
+      <span class="skill-tag">Node.js</span>
+      <span class="skill-tag">Python</span>
+      <span class="skill-tag">AI / ML</span>
+      <span class="skill-tag">IBM Certified</span>
+    </div>
+  </div>
+
+  <!-- ACHIEVEMENTS -->
+  <div class="section">
+    <div class="section-title">Achievements &amp; Credentials</div>
+    <ul class="achieve-list">
+      <li>Patent filed in India (inventor) — proprietary process innovation</li>
+      <li>2 research papers indexed in Scopus and Springer (international academic indexing)</li>
+      <li>IBM Full Stack Developer Certified</li>
+      <li>4 national 24H hackathons organized and delivered — consistent 30–40% budget surplus on every event</li>
+      <li>30+ vetted mature agency network built from zero through direct outreach alone</li>
+      <li>$8,100+ total event value managed — ₹6.77L+ in operational budgets across multiple campaigns</li>
+    </ul>
+  </div>
+
+</div>
+</body>
+</html>
