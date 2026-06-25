@@ -9,7 +9,7 @@ import Chatbot from '@/components/chatbot/Chatbot';
 import AuditPopup from '@/components/shared/AuditPopup';
 
 export const metadata = {
-  metadataBase: new URL('https://omkumargarg.vercel.app'),
+  metadataBase: new URL('https://om-executive-portfolio.vercel.app'),
   title: {
     default: 'Om Kumar Garg — India Operations Lead | Ecosystem Architect',
     template: '%s | Om Kumar Garg',
@@ -24,7 +24,7 @@ export const metadata = {
   openGraph: {
     title: "Om Kumar Garg — India's Embedded Operations Partner",
     description: 'One person. 30+ agencies. 6,000+ developers. $8,100+ managed. Your India infrastructure from Day 1.',
-    url: 'https://omkumargarg.vercel.app',
+    url: 'https://om-executive-portfolio.vercel.app',
     siteName: 'Om Kumar Garg',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Om Kumar Garg — India Operations Lead' }],
     type: 'website',
