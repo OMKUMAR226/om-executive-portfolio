@@ -37,8 +37,9 @@ const CAPABILITIES = [
   {
     icon: '🏗️',
     title: 'Operations, GTM & Business Setup',
-    body: 'End-to-end operational architecture. Entity registration, team recruitment, vendor sourcing, compliance, process design — I\'ve embedded directly into startups to overhaul operational structure prior to funding rounds.',
-    sub: 'From idea to operational baseline — embedded.',
+    body: 'End-to-end operational architecture. Entity registration, team recruitment, vendor sourcing, compliance, process design. Backed by a Govt. of India MSME registered enterprise — every engagement is legally compliant and risk-mitigated.',
+    badge: { val: 'MSME REGISTERED', color: 'gold' },
+    sub: 'Govt. registered. Risk-mitigated. Embedded.',
   },
   {
     icon: '🧪',

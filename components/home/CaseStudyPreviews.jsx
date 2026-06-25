@@ -78,7 +78,7 @@ export default function CaseStudyPreviews() {
             The Numbers Are Documented. The Results Are Real.
           </AnimatedHeading>
           <p style={{ maxWidth: '540px', margin: '0 auto', fontSize: '17px', color: 'var(--slate-400)', lineHeight: 1.7 }}>
-            Four case studies. Four industries. One consistent result: every engagement delivered.
+            Four case studies. Four industries. One consistent result: every engagement delivered — backed by a Govt. of India MSME registered enterprise.
           </p>
         </div>
 

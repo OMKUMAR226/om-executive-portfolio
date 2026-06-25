@@ -6,7 +6,7 @@ import SectionLabel from '@/components/shared/SectionLabel';
 
 export const metadata = {
   title: 'Case Studies | Proof of Execution',
-  description: 'Four case studies. Four industries. One consistent result: every engagement delivered, every budget maintained.',
+  description: 'Four case studies. Four industries. One consistent result: every engagement delivered, every budget maintained. MSME registered enterprise.',
 };
 
 const CASE_STUDIES = [
@@ -54,7 +54,7 @@ export default function CaseStudiesListing() {
             The Numbers Are Documented. The Results Are Real.
           </AnimatedHeading>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '18px', color: 'var(--slate-400)', maxWidth: '600px', margin: '0 auto' }}>
-            Four case studies. Four industries. One consistent result: every engagement delivered, every budget maintained.
+            Four case studies. Four industries. One consistent result: every engagement delivered, every budget maintained. All through a Govt. of India MSME registered enterprise.
           </p>
         </div>
       </section>

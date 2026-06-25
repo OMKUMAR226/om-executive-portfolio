@@ -91,6 +91,10 @@ export default function DisruptiveAdvantage() {
                  <div className="pulse-dot" />
                  <span style={{ fontSize: '14px', fontFamily: "'JetBrains Mono', monospace", color: 'var(--emerald)', fontWeight: 500 }}>Direct Execution</span>
                </div>
+               <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                 <div className="pulse-dot" style={{ background: 'var(--gold)', boxShadow: '0 0 8px var(--gold)' }} />
+                 <span style={{ fontSize: '14px', fontFamily: "'JetBrains Mono', monospace", color: 'var(--gold)', fontWeight: 500 }}>MSME Registered</span>
+               </div>
             </div>
           </div>
 

@@ -11,19 +11,19 @@ const CARDS = [
     icon: Globe,
     heading: "You've Validated. Now You Need India Done Right.",
     title: 'Foreign Startup Entering India',
-    body: "You've proven product-market fit in your home market. Every India agency you've spoken to wants a retainer and gives you a deck. You need someone inside your org — not outside it — who already has the network and track record.",
+    body: "You've proven product-market fit in your home market. Every India agency you've spoken to wants a retainer and gives you a deck. You need someone inside your org — not outside it — who already has the network, track record, and a Govt. of India MSME registered enterprise backing every engagement.",
   },
   {
     icon: Building,
     heading: 'You Need Indian Quality Without Indian Risk.',
     title: 'Global Company Needing India Capabilities',
-    body: 'Development at Indian cost without quality risk. Beta testers who match your actual user demographic. Distribution, app downloads, product testimonials — without 6 months of vendor sourcing from scratch.',
+    body: 'Development at Indian cost without quality risk. Beta testers who match your actual user demographic. Distribution, app downloads, product testimonials — without 6 months of vendor sourcing. All through an MSME registered, government-verified enterprise.',
   },
   {
     icon: Network,
     heading: 'You Have Demand. You Need Reliable Delivery.',
     title: 'Agency Needing India White-Label',
-    body: "Client demand exceeding your capacity. You need an Indian partner for overflow work who vets quality before it reaches your client. You've been burned before. This is different — because I hold the technical scrutiny of a patent inventor.",
+    body: "Client demand exceeding your capacity. You need an Indian partner for overflow work who vets quality before it reaches your client. You've been burned before. This is different — backed by a MSME registered entity with the technical scrutiny of a patent inventor.",
   },
 ];
 

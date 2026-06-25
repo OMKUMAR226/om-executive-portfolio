@@ -125,6 +125,10 @@ export default function PainSection() {
             You need someone embedded inside your team
             <br />
             with the infrastructure already built.
+            <br />
+            <span style={{ color: 'var(--emerald)', fontSize: '0.75em' }}>
+              Government-registered. MSME certified. Risk-mitigated from Day 1.
+            </span>
           </p>
         </div>
       </div>

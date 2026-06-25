@@ -6,7 +6,7 @@ import MagneticButton from '@/components/shared/MagneticButton';
 
 export const metadata = {
   title: 'Achievements & Documentation | The Proof',
-  description: 'Verified numbers, patents, publications, and technical certifications. Execution, documented.',
+  description: 'Verified numbers, patents, publications, MSME registration, and technical certifications. Execution, documented.',
 };
 
 export default function AchievementsPage() {
@@ -19,7 +19,7 @@ export default function AchievementsPage() {
             Documented Execution.
           </AnimatedHeading>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '18px', color: 'var(--slate-400)', maxWidth: '640px', margin: '0 auto' }}>
-            Numbers without context are vanity metrics. Claims without proof are just marketing. This is the verifiable documentation of my technical depth and operational output.
+            Numbers without context are vanity metrics. Claims without proof are just marketing. This is the verifiable documentation — MSME registered, patent filed, Scopus indexed — of my technical depth and operational output.
           </p>
         </div>
       </section>

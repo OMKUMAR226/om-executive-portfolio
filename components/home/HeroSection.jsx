@@ -257,7 +257,7 @@ export default function HeroSection() {
 
                   {/* Role pills */}
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', justifyContent: 'center', marginTop: '10px' }}>
-                    <span className="pill pill-gold">Global Hub: India</span>
+                    <span className="pill pill-gold">Risk-Mitigated Operator</span>
                     <span className="pill pill-sky">Execution Architect</span>
                     <span className="pill pill-emerald">MSME Certified</span>
                   </div>
@@ -266,8 +266,8 @@ export default function HeroSection() {
                 {/* Info rows */}
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', borderTop: '1px solid rgba(56,189,248,0.1)', paddingTop: '20px' }}>
                   {[
+                    { icon: '🛡️', text: 'Risk-Mitigated Operations & Scaling' },
                     { icon: '🏛️', text: 'Govt. of India — MSME Registered' },
-                    { icon: '🌐', text: 'India Market Lead' },
                     { icon: '🔬', text: 'Inventor — Patent Filed in India' },
                     { icon: '📚', text: '2 Scopus/Springer Publications' },
                   ].map((row, i) => (
